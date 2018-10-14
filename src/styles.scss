@@ -1,4 +1,6 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import 'variables';
+@import '../node_modules/font-awesome/scss/font-awesome';
 
 // some basic resets 
 
@@ -7,4 +9,20 @@ body {
   margin: 0; 
   font-family: Montserrat, sans-serif; 
   
+}
+
+.primary-color {
+  color: black!important;
+}
+.accent-color {
+  color:white!important;
+}
+.background-primary-color {
+  background-color: #3F51B5!important;
+}
+.background-accent-color {
+  background-color: #FF4081!important;
+}
+.white-text {
+  color: #FFF!important;
 }
