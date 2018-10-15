@@ -1,7 +1,8 @@
 <mat-toolbar color="transparent">
   <a mat-flat-button routerLink="/home" class="chromo-button"></a>
   <span class="example-fill-remaining-space"></span>
-  <a mat-flat-button routerLink="/projects"><span class="fa fa-th"></span> Projects</a>
-  <a mat-button mat-flat-button routerLink="/contact"><span class="fa fa-envelope"></span> Contact</a>
+  <a mat-flat-button routerLink="/projects"><span class="fa fa-th"></span> {{ 'load.navigation.projects' | translate }}</a>
+  <a mat-button mat-flat-button routerLink="/contact"><span class="fa fa-envelope"></span> {{ 'load.navigation.contact' | translate }}</a>
+  <a (click)="changeLanguage()" class="link"><i class="fa fa-language"></i>  {{key}}</a>
 </mat-toolbar>
 

@@ -8,7 +8,8 @@ a {
         margin: 0px 3px 0px 3px;
     }
     
-    color: black;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
     cursor: pointer;
     text-decoration: none;
 }
@@ -22,13 +23,17 @@ a {
 
 .mat-toolbar {
     background: transparent!important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100% !important;
 }
 
 .mat-toolbar-single-row {
   padding-left: 0px!important;
 }
 
-a {
-    color: black;
-    cursor: pointer;
+.link {
+    cursor:pointer;
   }
