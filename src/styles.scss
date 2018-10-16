@@ -26,3 +26,24 @@ body {
 .white-text {
   color: #FFF!important;
 }
+
+button.calendar, button.calendar:active {
+  width: 2.75rem;
+  background-repeat: no-repeat;
+  background-size: 23px;
+  background-position: center;
+}
+
+img {
+  min-width: 100vw; /*img width*/
+  height: 100vh!important;
+  object-fit: cover;
+}
+
+h3 {
+  
+    cursor:pointer;
+    color: white!important;    
+    text-shadow: 2px 2px 4px #000000;
+  
+}

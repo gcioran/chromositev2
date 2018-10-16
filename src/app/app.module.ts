@@ -6,6 +6,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { HomeCarouselComponent } from './home/carousel-home.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -27,7 +29,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     HomeComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    HomeCarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +39,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FlexLayoutModule,
     AppRoutingModule,
     HttpClientModule,
+    NgbModule,
     TranslateModule.forRoot({
         loader: {
             provide: TranslateLoader,
