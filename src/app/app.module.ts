@@ -17,6 +17,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HomeCarouselComponent } from './home/carousel-home.component';
+import { DetailedProjectComponent } from './detailed-project/detailed-project.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -30,7 +31,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     ProjectsComponent,
     ContactComponent,
-    HomeCarouselComponent
+    HomeCarouselComponent,
+    DetailedProjectComponent
   ],
   imports: [
     BrowserModule,

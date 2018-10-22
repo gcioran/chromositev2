@@ -34,16 +34,45 @@ button.calendar, button.calendar:active {
   background-position: center;
 }
 
-img {
-  min-width: 100vw; /*img width*/
-  height: 100vh!important;
+.carousel-slide img {
   object-fit: cover;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    margin-top: -50vh;
+    margin-left: -50vw;
 }
 
 h3 {
-  
     cursor:pointer;
     color: white!important;    
     text-shadow: 2px 2px 4px #000000;
   
 }
+
+.carousel-item {    
+  height: 100vh;
+}
+
+.carousel-control-next {
+  background: olive;
+  width: 53px;
+  height: 66px;
+  bottom: 30px;
+  top:inherit;
+  cursor:pointer;
+}
+
+.carousel-control-prev {
+  background: olive;
+  width: 53px;
+  height: 66px;
+  bottom: 30px;
+  top:inherit;
+  left: unset;
+  right: 53px;
+  cursor:pointer;
+}
+

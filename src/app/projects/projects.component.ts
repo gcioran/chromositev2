@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ProjectsService } from '../projects.service';
 
 @Component({
   selector: 'app-projects',
@@ -6,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
+  images = [];
 
-  constructor() { }
+  constructor(public project: ProjectsService, public router: Router) {
+    this.project.items.forEach((item)  => {
+      this.images.push(item.path);
+  });
+   }
 
   ngOnInit() {
+  }
+
+  onSelect(image) {
+    const link = `/projects/${image.text.toLowerCase()}`;
+    this.router.navigate([link]);
   }
 
 }

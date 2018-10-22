@@ -1,3 +1,15 @@
-<p>
-  projects works!
-</p>
+<div class="w3-container w3-padding-64" id="projects">
+  <!-- <h3 class="w3-center">{{ 'load.projects.title' | translate }}</h3> -->
+  <div >
+    <ul class="cover-photos">
+      <li class="relative-position" 
+        *ngFor='let image of project.items'
+        (click)="onSelect(image)"        
+        (mouseover)="image.showText=true"
+        (mouseleave)="image.showText=false">
+        <img [src]="image.path"  alt="project proiect">
+        <span *ngIf="image.showText" class="text-content">{{image.text}}</span>
+      </li>
+   </ul>
+  </div>
+</div>

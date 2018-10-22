@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
 import { ProjectsService } from '../projects.service';
 
 @Component({
@@ -8,11 +9,10 @@ import { ProjectsService } from '../projects.service';
     providers: [NgbCarouselConfig]
 })
 
-export class HomeCarouselComponent implements OnInit{
-    projectCover;
+export class HomeCarouselComponent implements OnInit {
     images = [];
 
-    constructor(config: NgbCarouselConfig, public project: ProjectsService) {
+    constructor(config: NgbCarouselConfig, public project: ProjectsService, public router: Router) {
         config.interval = 10000000;
         config.pauseOnHover = false;
         config.showNavigationIndicators = false;
@@ -24,4 +24,9 @@ export class HomeCarouselComponent implements OnInit{
 
     ngOnInit() {
       }
+
+    onSelect(image) {
+    const link = `/projects/${image.text.toLowerCase()}`;
+    this.router.navigate([link]);
+    }
 }
