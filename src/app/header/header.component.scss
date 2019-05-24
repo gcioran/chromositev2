@@ -1,5 +1,5 @@
 .example-fill-remaining-space {
-    flex: 1 1 auto;
+    flex: 100 1 auto;
   }
 
 a {
@@ -7,31 +7,9 @@ a {
     span {
         margin: 0px 3px 0px 3px;
     }
-    
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
+
     cursor: pointer;
     text-decoration: none;
-}
-.chromo-button { 
-    background:url('/images/logo.png'); 
-    background-size: contain;
-    height: 100%;
-    width: 200px;
-    background-position: center;
-    background-repeat: no-repeat;}
-
-.mat-toolbar {
-    background: transparent!important;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100% !important;
-}
-
-.mat-toolbar-single-row {
-  padding-left: 0px!important;
 }
 
 .link {
