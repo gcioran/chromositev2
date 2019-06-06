@@ -7,6 +7,7 @@ import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { AgmCoreModule } from '@agm/core'; 
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
@@ -48,6 +49,9 @@ export function HttpLoaderFactory(http: HttpClient) {
             useFactory: HttpLoaderFactory,
             deps: [HttpClient]
         }
+    }),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBwW7Hfmgg0jlOrpk_qB8HkQQhXJUzOyik'
     })
   ],
   providers: [],

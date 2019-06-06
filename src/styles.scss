@@ -8,24 +8,14 @@ body {
   padding: 0; 
   margin: 0; 
   font-family: Montserrat, sans-serif; 
-  
+  height: 100%;
 }
 
-// .primary-color {
-//   color: black!important;
-// }
-// .accent-color {
-//   color:white!important;
-// }
-// .background-primary-color {
-//   background-color: #3F51B5!important;
-// }
-// .background-accent-color {
-//   background-color: #FF4081!important;
-// }
-// .white-text {
-//   color: #FFF!important;
-// }
+.main-page {
+  padding-left: 0!important;
+  padding-right: 0!important;
+  margin-top: 41px;
+}
 
 button.calendar, button.calendar:active {
   width: 2.75rem;
