@@ -1,3 +1,8 @@
 agm-map {
     height: 100vh;
   }
+
+.chromo-grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}

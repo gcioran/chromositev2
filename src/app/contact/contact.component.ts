@@ -12,7 +12,16 @@ export class ContactComponent implements OnInit {
   longitude: number = 21.138463;
   zoom =15;
   address: string;
-  private geoCoder;
+  iconUrl= {
+    url: 'images/marker_black.png',
+    labelOrigin: {x:5, y:-20}
+  };
+  labelOptions = {
+    color: 'black',
+    fontSize: '24px',
+    fontWeight: 'bold',
+    text: "Chromosome Studio"
+}
 
   @ViewChild('search')
   public searchElementRef: ElementRef;
@@ -22,11 +31,5 @@ export class ContactComponent implements OnInit {
    }
 
   ngOnInit() {
-    //load Places Autocomplete
-    this.mapsAPILoader.load().then(() => {
-      // this.setCurrentLocation();
-      this.geoCoder = new google.maps.Geocoder;
-
-    });
   }
 }

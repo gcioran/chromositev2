@@ -1,13 +1,23 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
+<div class="container-fluid">
+  <div class="row align-items-center">
+    <div class="col-8 chromo-grayscale">
         <agm-map 
         [latitude]="latitude" 
         [longitude]="longitude" 
         [zoom]="zoom" >
+          <agm-marker 
+          [latitude]="latitude"
+          [longitude]="longitude"
+          [iconUrl]="iconUrl"  
+          [label]="labelOptions"
+          [markerDraggable]="false">          
+          <agm-info-window>
+            <strong>{{ label }}</strong>
+          </agm-info-window>
+        </agm-marker>
         </agm-map>
     </div>
-    <div class="col-6">
+    <div class="col">
         <p><i class="fa-fw"></i> <strong>{{ 'load.contact.arh' | translate }} Dana Ardelean</strong></p>
         <p><i class="fa fa-phone fa-fw"></i> {{ 'load.contact.phone' | translate }}</p>
         <p><i class="fa fa-envelope"> </i> {{ 'load.contact.mail' | translate }}</p>
