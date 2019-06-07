@@ -26,8 +26,7 @@ export class ContactComponent implements OnInit {
   @ViewChild('search')
   public searchElementRef: ElementRef;
   
-  constructor( private mapsAPILoader: MapsAPILoader,
-    private ngZone: NgZone) {
+  constructor() {
    }
 
   ngOnInit() {
