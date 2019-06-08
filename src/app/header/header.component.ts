@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
+import { ChromoLanguageService } from '../chromo-language.service'
 
 @Component({
   selector: 'app-header',
@@ -10,17 +11,17 @@ export class HeaderComponent implements OnInit {
 
   public key: string;
 
-  constructor(private translate: TranslateService) {
-    this.key = 'en';
-    this.translate = translate;
+  constructor(private translate: TranslateService, private language: ChromoLanguageService) {
   }
 
   public changeLanguage() {
     this.translate.use(this.key);
-    this.key = this.key  === 'en' ? 'ro' : 'en';
+    var newLanguage = this.key  === 'en' ? 'ro' : 'en';
+    this.language.changeLanguage(newLanguage);
   };
 
   ngOnInit() {
+    this.language.currentSelectedLanguage.subscribe(language => this.key = language);
   }
 
 }
