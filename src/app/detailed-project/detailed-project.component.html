@@ -1,37 +1,41 @@
 <div class="container-fluid">
+  <div class="row navbar-mock"></div>
   <div class="row">
-    <ngb-carousel class="col-lg-9 col-md-8 main-page" #carousel>
-      <ng-template ngbSlide *ngFor='let image of selectedProject.src;let i = index' id="{{i}}">
-        <img [src]="image.pic" alt="selectedProject.text" class="mx-auto d-block">
+    <ngb-carousel class="col-lg-9 col-md-8 main-page mh-100" #carousel>
+      <ng-template ngbSlide *ngFor='let image of selectedProject.src;let i = index' id="{{i}}" class="slide">
+        <img *ngIf="image.pic" [src]="image.pic" class="mx-auto d-block">
+        <div>
           <div class="carousel-caption" *ngIf="image.text && showRomanian">{{image.text.RO}}</div>
           <div class="carousel-caption" *ngIf="image.text && !showRomanian">{{image.text.EN}}</div>
+        </div>
       </ng-template>
     </ngb-carousel>
-    <div class="description-panel container col-lg-3 col-md-4">
-      <div class="row align-items-center justify-content-center">
+    <div class="description-panel col-lg-3 col-md-4">
+      <div>
         <ol class="side-buttons">
           <li>
-            <a (click)="setDescriptionActive()" *ngIf="hasDescription()">
-              <b>{{ 'load.modalMeniu.description' | translate }}</b>
+            <a (click)="setDescriptionActive()" 
+               *ngIf="hasDescription()">
+              <b class="link-dark">{{ 'load.modalMeniu.description' | translate }}</b>
             </a>
           </li>
-          <li><a (click)="setImagesActive()"
-                 *ngIf="hasDescription() || selectedProject.drawings">
-                  <b>{{ 'load.modalMeniu.images' | translate }}</b>
+          <li><a (click)="setImagesActive()">
+                  <b class="link-dark">{{ 'load.modalMeniu.images' | translate }}</b>
           </a></li>
           <li><a (click)="setDrawingsActive()" *ngIf="selectedProject.drawings">
-            <b>{{ 'load.modalMeniu.drawings' | translate }}</b>
+            <b class="link-dark">{{ 'load.modalMeniu.drawings' | translate }}</b>
           </a></li>
         </ol>
       </div>
-      <div class="description-container justify-content-center row align-items-center">
-          <div><b>{{selectedProject.sideDescription.title}}</b></div>
+      <div class="description-container">
+          <div><b>{{selectedProject.sideDescription.title}}</b>
             <p style="white-space: pre-wrap;" *ngIf="showRomanian">
-    {{selectedProject.sideDescription.body.RO}}
-            </p>
-            <p style="white-space: pre-wrap;" *ngIf="!showRomanian">
-    {{selectedProject.sideDescription.body.EN}}
-            </p>
+                {{selectedProject.sideDescription.body.RO}}
+                        </p>
+                        <p style="white-space: pre-wrap;" *ngIf="!showRomanian">
+                {{selectedProject.sideDescription.body.EN}}
+                        </p>
+          </div>
       </div>
     </div>
   </div>

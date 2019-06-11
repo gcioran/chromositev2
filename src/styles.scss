@@ -11,12 +11,6 @@ body {
   height: 100%;
 }
 
-.main-page {
-  padding-left: 0!important;
-  padding-right: 0!important;
-  margin-top: 41px;
-}
-
 button.calendar, button.calendar:active {
   width: 2.75rem;
   background-repeat: no-repeat;
@@ -35,13 +29,6 @@ button.calendar, button.calendar:active {
     margin-left: -50vw;
 }
 
-// h3 {
-//     cursor:pointer;
-//     color: white!important;    
-//     text-shadow: 2px 2px 4px #000000;
-  
-// }
-
 .carousel-item {    
   height: 100vh;
 }
@@ -50,3 +37,12 @@ button.calendar, button.calendar:active {
   height: 42px;
 }
 
+.chromo-shadow {
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+}
+
+
+.link-dark:hover {
+  cursor:pointer; 
+  text-shadow: 0px 0px 0px #000000;
+}
