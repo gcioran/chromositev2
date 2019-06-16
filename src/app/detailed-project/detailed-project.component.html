@@ -11,7 +11,7 @@
       </ng-template>
     </ngb-carousel>
     <div class="description-panel col-lg-3 col-md-4">
-      <div>
+      <div class="d-none d-md-block">
         <ol class="side-buttons">
           <li>
             <a (click)="setDescriptionActive()" 
@@ -28,13 +28,9 @@
         </ol>
       </div>
       <div class="description-container">
-          <div><b>{{selectedProject.sideDescription.title}}</b>
-            <p style="white-space: pre-wrap;" *ngIf="showRomanian">
-                {{selectedProject.sideDescription.body.RO}}
-                        </p>
-                        <p style="white-space: pre-wrap;" *ngIf="!showRomanian">
-                {{selectedProject.sideDescription.body.EN}}
-                        </p>
+          <div><b class="description-title">{{selectedProject.sideDescription.title}}</b>
+            <p style="white-space: pre-wrap;" *ngIf="showRomanian">{{selectedProject.sideDescription.body.RO}}</p>
+            <p style="white-space: pre-wrap;" *ngIf="!showRomanian">{{selectedProject.sideDescription.body.EN}}</p>
           </div>
       </div>
     </div>

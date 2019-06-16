@@ -21,6 +21,7 @@ export class ProjectsComponent implements OnInit {
 
   onSelect(image) {
     const link = `/projects/${image.text.toLowerCase()}`;
+    image.showText = false;
     this.router.navigate([link]);
   }
 

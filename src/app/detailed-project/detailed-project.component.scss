@@ -16,6 +16,34 @@
     margin:auto;
 }
 
+::ng-deep .carousel-control-next-icon {
+    background-image: none;
+}
+
+::ng-deep .carousel-control-prev-icon {
+    background-image: none;
+}
+
+::ng-deep .carousel-control-next-icon::before {
+    color: black!important;
+    width: 100px!important;
+    font-family: "FontAwesome"; 
+    content: "\f105";
+    line-height: 1.2;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+::ng-deep .carousel-control-prev-icon::before {
+    color: black!important;
+    width: 100px!important;
+    font-family: "FontAwesome"; 
+    content: "\f104";
+    line-height: 1.2;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
 .class-test {
     width: 100%;
 }
@@ -23,6 +51,7 @@
 .main-page {
     padding-left: 10px!important;
     padding-right: 10px!important;
+    outline: none;
   }
 
 .carousel .carousel-inner {
@@ -64,4 +93,22 @@ ol {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.description-title {
+}
+
+@media (max-width: 767px) {
+    .description-title {
+        position: fixed;
+        top: 60px;
+        text-align: center;
+        width: 100vw;
+        margin-left: -15px;
+    }
+    
+    .main-page {
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+      }
 }
