@@ -1,8 +1,0 @@
-<ngb-carousel *ngIf="images">
-  <ng-template ngbSlide *ngFor='let image of project.items'>
-    <img [src]="image.path" alt="image.text">
-    <div class="carousel-caption">
-      <h3 (click)="onSelect(image)">{{image.text}}</h3>
-    </div>
-  </ng-template>
-</ngb-carousel>

@@ -15,7 +15,6 @@
     list-style-type: none
   }
   .cover-photos img {
-    /* Just in case there are inline attributes */
     width: 100% ;
     height: auto !important;
   }
@@ -39,9 +38,7 @@
   }
 
   span.text-content span {
-    /*display: table-cell;*/
     text-align: center;
-    /*vertical-align: middle;*/
   }
 
   .relative-position {

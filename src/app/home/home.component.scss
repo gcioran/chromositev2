@@ -1,7 +1,79 @@
-// .home-background-pic {
-//     background-size: cover;
-// 	  height: 100vh;
-//     background-image: url("/images/cover.jpg");
-// }
+.home-background-pic {
+    background-size: cover;
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
 
+    img {
+        width: 100%;    
+    }
+}
 
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.about-us-cards {
+    font-size: 16px!important;
+    text-align: center!important;
+    padding: 20px 10px 10px 10px;
+    margin: 0;
+    width: 99%;
+
+    i {
+        font-size: 46px!important;
+        margin-bottom: 16px;
+    }
+
+    p {
+        margin: 0 0 10px;
+    }
+}
+
+.afir {
+width:100%;
+}
+
+.about-us-container {
+    background-color: #f1f1f1!important;
+}
+
+.aboutUsText {
+    padding: 10px 0;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 0;
+}
+
+.about-us-cards-text {
+    padding: 30px;
+}
+
+.we-know-image {
+    height:200px;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    float: right!important;
+}
+
+.black-project-button {
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 6px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none!important;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #333
+}
