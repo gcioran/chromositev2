@@ -20,9 +20,14 @@ import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { DetailedProjectComponent } from './detailed-project/detailed-project.component';
 
+declare var Hammer: any;
+
 export class MyHammerConfig extends HammerGestureConfig  {
-  overrides = <any>{
-    'swipe': {velocity: 0.4, threshold: 20} // override default settings
+  buildHammer(element: HTMLElement) {
+    let mc = new Hammer(element, {
+      touchAction: "pan-y"
+    });
+    return mc;
   }
 }
 
