@@ -5,6 +5,7 @@ import { Location } from '@angular/common';
 import { NgbCarouselConfig, NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
 import { ChromoLanguageService } from '../chromo-language.service'
 
+
 @Component({
   selector: 'app-detailed-project',
   templateUrl: './detailed-project.component.html',
@@ -45,10 +46,8 @@ export class DetailedProjectComponent implements OnInit {
     this.carousel.select('0');
   };
   public setDescriptionActive() {
-    console.log('FFFF');
      var index = this.selectedProject.src.length -1;
      var stringIndex: string = index.toString();
-     console.log('V',stringIndex);
      this.carousel.select(stringIndex);
    };
    public hasDescription() {
@@ -56,11 +55,18 @@ export class DetailedProjectComponent implements OnInit {
      return !!this.selectedProject.src[index].text;
    };
 
+   public swipe(e) {
+    if (e === 'swiperight') {
+      this.carousel.prev();
+    } else {
+      this.carousel.next();
+    } 
+  }
+
   private getProjectIndex(projectName) {
     const project = this.projectCollection.items.filter(function(element: any) {
       return element.text.toLowerCase() === projectName;
     });
     return this.projectCollection.items.indexOf(project[0]);
   }
-
 }
