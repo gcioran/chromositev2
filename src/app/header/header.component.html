@@ -14,15 +14,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
               <a class="nav-link" routerLink="/projects">
                 <span class="fa fa-th"></span> {{ 'load.navigation.projects' | translate }}</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <a class="nav-link" routerLink="/contact">
                   <span class="fa fa-envelope"></span> {{ 'load.navigation.contact' | translate }}</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <a (click)="changeLanguage()" class="nav-link"><i class="fa fa-language"></i>  {{key}}</a>
             </li>
           </ul>
