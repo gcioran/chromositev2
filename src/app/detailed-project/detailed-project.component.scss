@@ -1,5 +1,4 @@
 ::ng-deep .carousel-item {
-    max-height: calc(100vh - 41px);
     flex-direction: column;
 }
 
@@ -15,6 +14,21 @@
     right:0;
     margin:auto;
 }
+
+::ng-deep .carousel-slide img {
+    object-fit: cover;
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100vw;
+      height: 100vh;
+      margin-top: -50vh;
+      margin-left: -50vw;
+  }
+
+  ::ng-deep .carousel-item {    
+    height: calc(100vh - 42px);
+  }
 
 ::ng-deep .carousel-control-next-icon {
     background-image: none;
@@ -95,15 +109,14 @@ ol {
     justify-content: center;
 }
 
-.description-title {
-}
-
 @media (max-width: 767px) {
     .description-title {
         position: fixed;
-        top: 60px;
+        top: 0px;
+        padding-top: 60px;
         text-align: center;
         width: 100vw;
+        background: white;
         margin-left: -15px;
     }
     
@@ -111,4 +124,22 @@ ol {
         padding-left: 0px!important;
         padding-right: 0px!important;
       }
+
+      .carousel-caption {
+        overflow: scroll;
+        color: black;
+        position: relative;
+        padding: 10px;
+        margin-top:30px;
+        padding: 40px 10px 10px 10px;
+        text-align: justify;
+        height: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-height: 767px) and (min-width: 767px){
+    .carousel-caption {
+      overflow: scroll;
+    }
 }
