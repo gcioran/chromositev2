@@ -86,6 +86,8 @@ ol {
     text-align: justify;
     height: 50%;
     margin: auto;
+    display: flex;
+    align-items: center;
 }
 
 .description-panel {
@@ -135,11 +137,13 @@ ol {
         text-align: justify;
         height: 90%;
         margin: auto;
+        display: block;
     }
 }
 
 @media (max-height: 767px) and (min-width: 767px){
     .carousel-caption {
       overflow: scroll;
+      display: block;
     }
 }
