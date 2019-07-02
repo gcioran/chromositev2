@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
+import { ChromoLanguageService } from './chromo-language.service'
 
 @Component({
   selector: 'app-root',
@@ -9,11 +10,10 @@ import {TranslateService} from '@ngx-translate/core';
 export class AppComponent {
   title = 'app';
 
-  constructor(public translate: TranslateService) {
+  constructor(public translate: TranslateService, private language: ChromoLanguageService) {
     translate.addLangs(['en', 'ro']);
     translate.setDefaultLang('ro');
 
-    const browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/en|ro/) ? browserLang : 'ro');
+    this.language.currentSelectedLanguage.subscribe(language => translate.use(language))
   }
 }

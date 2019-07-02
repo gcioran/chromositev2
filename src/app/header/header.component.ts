@@ -21,6 +21,7 @@ export class HeaderComponent implements OnInit {
   };
 
   ngOnInit() {
+    // this.language.changeLanguage('ro')
     this.language.currentSelectedLanguage.subscribe(language => this.key = language);
   }
 
