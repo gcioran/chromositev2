@@ -13,7 +13,7 @@ import { ChromoLanguageService } from '../chromo-language.service'
   providers: [NgbCarouselConfig]  
 })
 export class DetailedProjectComponent implements OnInit {
-  @ViewChild('carousel') carousel: NgbCarousel;
+  @ViewChild('carousel', { static: false }) carousel: NgbCarousel;
   public selectedProject!: any;
   public showRomanian =true;
 

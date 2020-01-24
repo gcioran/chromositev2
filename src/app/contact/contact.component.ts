@@ -23,7 +23,7 @@ export class ContactComponent implements OnInit {
     text: "Chromosome Studio"
 }
 
-  @ViewChild('search')
+  @ViewChild('search', { static: false })
   public searchElementRef: ElementRef;
   
   constructor() {
