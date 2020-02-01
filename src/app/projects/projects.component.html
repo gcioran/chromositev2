@@ -8,7 +8,11 @@
         (click)="onSelect(image)"        
         (mouseover)="image.showText=true"
         (mouseleave)="image.showText=false">
-        <img [src]="image.path"  alt="project proiect">
+        <picture>
+            <source [srcset]="image.path +'.webp'" type="image/webp">
+            <source [srcset]="image.path +'.jpg'" type="image/jpeg">
+            <img [src]="image.path +'.jpg'"  alt="project proiect">
+        </picture>
         <span *ngIf="image.showText" class="text-content">{{image.text}}</span>
       </li>
    </ul>

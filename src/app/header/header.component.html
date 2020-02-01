@@ -1,7 +1,11 @@
 <div id="app" class="container">
     <nav class="navbar navbar-expand-lg fixed-top navbar-light justify-content-between text-dark bg-white py-0 chromo-shadow">
         <a class="navbar-brand" routerLink="/home" >
-          <img src="../../images/logo1.jpg" height="30" alt="">
+          <picture>
+              <source srcset="images/logo1.webp" type="image/webp">
+              <source srcset="images/logo1.jpg" type="image/jpeg">
+              <img class="" src="images/logo1.jpg"  height="30" alt="logo">
+          </picture>
         </a>
         <button class="navbar-toggler" 
                 type="button" 

@@ -2,7 +2,11 @@
 <div class="container-fluid">
     <div class="row navbar-mock"></div>
     <div class="home-background-pic">
-        <img class="" src="images/cover.jpg" alt="architecture">
+        <picture>
+                <source srcset="images/cover.webp" type="image/webp">
+                <source srcset="images/cover.jpg" type="image/jpeg">
+                <img class="" src="images/cover.jpg" alt="architecture">
+        </picture>
     </div>
 
     <a routerLink="/projects"><div class="container-fluid about-us-cards">
@@ -37,7 +41,11 @@
     <!-- Promo Section - "We know design" -->
     <div class="container-fluid about-us-container">
     <div class="about-us-cards-text" >
-        <img class="float-righ we-know-image" src="images/pag1.jpg" alt="architecture">
+        <picture>
+                <source srcset="images/pag1.webp" type="image/webp">
+                <source srcset="images/pag1.jpg" type="image/jpeg">
+                <img class="float-righ we-know-image" src="images/pag1.jpg" alt="architecture">
+        </picture>
         <p class="aboutUsText">
         {{ 'load.aboutUs.text' | translate }}
         <br><br> {{ 'load.aboutUs.hashtag' | translate }}
@@ -49,6 +57,10 @@
     </div>
     
     <div>
-        <img class="afir" src="images/afir.jpg" alt="afir">
+        <picture>
+            <source srcset="images/afir.webp" type="image/webp">
+            <source srcset="images/afir.jpg" type="image/jpeg">
+            <img class="afir" src="images_out/afir.webp" type="image/webp" alt="afir">
+        </picture>
     </div>
 </div>
