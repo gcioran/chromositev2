@@ -29,7 +29,7 @@ export class DetailedProjectComponent implements OnInit {
 
   ngOnInit(): void {
     this.selectedProject = this.getProject();
-    this.language.currentSelectedLanguage.subscribe(language => this.showRomanian = language === 'en');
+    this.language.currentSelectedLanguage.subscribe(language => this.showRomanian = language !== 'en');
   }
 
   public getProject() {

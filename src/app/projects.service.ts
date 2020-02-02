@@ -6,11 +6,40 @@ import { Injectable } from '@angular/core';
 
 export class ProjectsService {
   items = [
+    {path: 'images/projects/MP Studio/01',
+    text: 'MP Studio',
+    sideDescription: {
+      title: 'MP Studio',
+      body : {RO: 'Locație: Timisoara, România\nCategorie: Amenajare interioară\nSuprafață: teren: 35 mp\n\nAutor: Dana Ardelean\nCoautor: Gabriela Sava',
+              EN: 'Location: Timisoara, România\nCategory: Interior design\nArea: 35 sq m\n\nAuthor: Dana Ardelean\nCoauthor: Gabriela Sava'}
+      },
+    src:[
+{pic: 'images/projects/MP Studio/01'},
+{pic: 'images/projects/MP Studio/02'},
+{pic: 'images/projects/MP Studio/03'},
+{pic: 'images/projects/MP Studio/04'},
+{pic: 'images/projects/MP Studio/05'}
+      ]
+    },
+    {path: 'images/projects/V Extension/01',
+    text: 'V Extension',
+    sideDescription: {
+      title: 'V Extension',
+      body : {RO: 'Locație: Vinga, România\nCategorie: Rezidențial\nSuprafață teren: 1200 mp\nSuprafața construita: 180 mp \n\nAutor: Dana Ardelean',
+              EN: 'Location: Vinga, România\nCategory: Residential\nArea: 1200 sq m\nBuilt-up area: 180 sq m \n\nAuthor: Dana Ardelean'}
+      },
+    src:[
+{pic: 'images/projects/V Extension/01'},
+{pic: 'images/projects/V Extension/02'},
+{pic: 'images/projects/V Extension/03'},
+{pic: 'images/projects/V Extension/04'}
+      ]
+    },
     {path: 'images/projects/AldraDent/01',
     text: 'AldraDent',
     sideDescription: {
       title: 'AldraDent',
-      body : {RO: 'Locație: Cluj-Napoca, România\nCategorie: Amenajare interioară\nSuprafață: teren: 70 mp\n\nAutor: Dana Ardelean',
+      body : {RO: 'Locație: Cluj-Napoca, România\nCategorie: Amenajare interioară\nSuprafață: 70 mp\n\nAutor: Dana Ardelean',
               EN: 'Location: Cluj-Napoca, România\nCategory: Interior design\nArea: 70 sq m\n\nAuthor: Dana Ardelean'}
       },
     src:[
@@ -80,21 +109,6 @@ export class ProjectsService {
 {text : {RO: 'Pentru a optimiza un spațiu foarte mic, funcționalitatea este importantă. Toate obiectele sunt grupate pe un singur perete. Lavoarul este integrat într-o mască împreună cu rezervorul. Dusul este despărțit doar printr-un panou de sticlă.',
 EN: 'To optimize a very small space, functionality is important. All objects are grouped on a single wall. The basin is integrated into a mask along with the in-wall tank system. The shower is separated only by a glass panel.'}
 }
-      ]
-    },
-    {path:'images/projects/Burgerhouse/cover01',
-    text:'Burgerhouse',
-    sideDescription: {
-      title: 'Burgerhouse',
-      body : {RO: 'Locație: Timișoara, România\nCategorie: Amenajare interioară\nSuprafață: 45 mp\n\nAutor: Dana Ardelean, Zeno Ardelean',
-              EN: 'Location: Timișoara, România\nCategory: Interior design\nArea: 45 sq m\n\nAuthor: Dana Ardelean, Zeno Ardelean'}
-      },
-    src:[
-{pic:'images/projects/Burgerhouse/cover01'},
-{pic:'images/projects/Burgerhouse/location'},
-{pic:'images/projects/Burgerhouse/02'},
-{pic:'images/projects/Burgerhouse/03'},
-{pic:'images/projects/Burgerhouse/04'}
       ]
     },
     {path:'images/projects/CHROMOSOME OFFICE/04',
@@ -251,27 +265,6 @@ EN: 'The idea of setting up the café was carefully outlined in terms of locatio
      }
       ]
     },
-    {path:'images/projects/preluari/ACCES BRUNCH/cover',
-    text:'BRUNCH Access',
-    sideDescription: {
-      title: 'BRUNCH Access',
-      body : {RO: 'Locație: Timișoara, România\nCategorie: preluare / refurbished\n\nAutor: Dana Ardelean\nCoautor: Zeno Ardelean',
-              EN: 'Location: Timișoara, România\nCategory: Refurbished\n\nAuthor: Dana Ardelean\nCoauthor: Zeno Ardelean'}
-      },
-    drawings:3,
-    src:[
-     {pic:'images/projects/preluari/ACCES BRUNCH/00'},
-     {pic:'images/projects/preluari/ACCES BRUNCH/01_BRUNCH_LOCATION'},
-     {pic:'images/projects/preluari/ACCES BRUNCH/02_existent'},
-     {pic:'images/projects/preluari/ACCES BRUNCH/03_schema1'},
-     {pic:'images/projects/preluari/ACCES BRUNCH/04'},
-     {pic:'images/projects/preluari/ACCES BRUNCH/05realizat'},
-     {pic:'images/projects/preluari/ACCES BRUNCH/06'},
-     {text : {RO: 'Accesul în Brunch a fost tratat ca o primă intervenție pe fațada clădirii. Se propune redefinirea parterului întregii fațade prin folosirea unei geometrii unitare. Cutia contorsionată preia liniile de pe fațadă și le reinterpretează. Golul se aliniază cu solbancul ferestrei de deasupra și forma de pâlnie invită trecătorii spre acces.',
-             EN: 'Designing the access to Brunch mini-restaurant became a first intervention on the façade of the building. We proposed a redefinition of the ground floor for the entire building by using a unitary geometry. The twisted box takes over the lines on the façade and re-interprets them. The excavated door is in perfect line with the window sill above, while the rectangular funnel shape invites the passers-by inside.'}
-     }
-      ]
-    },
     {path:'images/projects/RB House/C2',
     text:'RB House',
     sideDescription: {
@@ -366,6 +359,42 @@ EN: 'The idea of setting up the café was carefully outlined in terms of locatio
              EN: 'The façade of the 80s building was redone and designed with minimum intervention, using paint and wood. The chaotic lines of the façade were separated in horizontal belts, the façade was therefore tamed, while the scattered texts provide a certain personality.'}
      }
     ]
+    },
+    {path:'images/projects/Burgerhouse/cover01',
+    text:'Burgerhouse',
+    sideDescription: {
+      title: 'Burgerhouse',
+      body : {RO: 'Locație: Timișoara, România\nCategorie: Amenajare interioară\nSuprafață: 45 mp\n\nAutor: Dana Ardelean, Zeno Ardelean',
+              EN: 'Location: Timișoara, România\nCategory: Interior design\nArea: 45 sq m\n\nAuthor: Dana Ardelean, Zeno Ardelean'}
+      },
+    src:[
+{pic:'images/projects/Burgerhouse/cover01'},
+{pic:'images/projects/Burgerhouse/location'},
+{pic:'images/projects/Burgerhouse/02'},
+{pic:'images/projects/Burgerhouse/03'},
+{pic:'images/projects/Burgerhouse/04'}
+      ]
+    },
+    {path:'images/projects/preluari/ACCES BRUNCH/cover',
+    text:'BRUNCH Access',
+    sideDescription: {
+      title: 'BRUNCH Access',
+      body : {RO: 'Locație: Timișoara, România\nCategorie: preluare / refurbished\n\nAutor: Dana Ardelean\nCoautor: Zeno Ardelean',
+              EN: 'Location: Timișoara, România\nCategory: Refurbished\n\nAuthor: Dana Ardelean\nCoauthor: Zeno Ardelean'}
+      },
+    drawings:3,
+    src:[
+     {pic:'images/projects/preluari/ACCES BRUNCH/00'},
+     {pic:'images/projects/preluari/ACCES BRUNCH/01_BRUNCH_LOCATION'},
+     {pic:'images/projects/preluari/ACCES BRUNCH/02_existent'},
+     {pic:'images/projects/preluari/ACCES BRUNCH/03_schema1'},
+     {pic:'images/projects/preluari/ACCES BRUNCH/04'},
+     {pic:'images/projects/preluari/ACCES BRUNCH/05realizat'},
+     {pic:'images/projects/preluari/ACCES BRUNCH/06'},
+     {text : {RO: 'Accesul în Brunch a fost tratat ca o primă intervenție pe fațada clădirii. Se propune redefinirea parterului întregii fațade prin folosirea unei geometrii unitare. Cutia contorsionată preia liniile de pe fațadă și le reinterpretează. Golul se aliniază cu solbancul ferestrei de deasupra și forma de pâlnie invită trecătorii spre acces.',
+             EN: 'Designing the access to Brunch mini-restaurant became a first intervention on the façade of the building. We proposed a redefinition of the ground floor for the entire building by using a unitary geometry. The twisted box takes over the lines on the façade and re-interprets them. The excavated door is in perfect line with the window sill above, while the rectangular funnel shape invites the passers-by inside.'}
+     }
+      ]
     }
 ////here starts renderings/////
     ];
