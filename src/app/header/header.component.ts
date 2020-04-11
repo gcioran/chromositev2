@@ -8,21 +8,25 @@ import { ChromoLanguageService } from '../chromo-language.service'
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  private dispayedLanguage: string;
+  public currentLanguage: string;
 
-  public key: string;
+  constructor(private translate: TranslateService, private languageService: ChromoLanguageService) {
+  }
 
-  constructor(private translate: TranslateService, private language: ChromoLanguageService) {
+  ngOnInit() {
+    this.languageService.currentSelectedLanguage.subscribe(language => this.currentLanguage = language);
+    this.updateDisplayedLanguage();
   }
 
   public changeLanguage() {
-    this.translate.use(this.key);
-    var newLanguage = this.key  === 'en' ? 'ro' : 'en';
-    this.language.changeLanguage(newLanguage);
+    const newLanguage = this.currentLanguage  === 'ro' ? 'en' : 'ro';
+    
+    this.languageService.changeLanguage(newLanguage);
+    this.updateDisplayedLanguage();
   };
 
-  ngOnInit() {
-    // this.language.changeLanguage('ro')
-    this.language.currentSelectedLanguage.subscribe(language => this.key = language);
+  private updateDisplayedLanguage() {
+    this.dispayedLanguage = this.currentLanguage  === 'ro' ? 'en' : 'ro';
   }
-
 }

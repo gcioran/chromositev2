@@ -7,6 +7,11 @@
     "contact" :"CONTACT",
     "close" : "CLOSE"
   },
+  "cookies": {
+    "message" : "This website uses cookies to ensure that you get the best experience while browsing our website. Continuing browsing is your acceptance of this use.",
+    "dismiss" : "Ok",
+    "link": "Learn more"
+  },
   "about" : {
     "architecture" : "ARCHITECTURE",
     "interior" : "INTERIOR DESIGN",

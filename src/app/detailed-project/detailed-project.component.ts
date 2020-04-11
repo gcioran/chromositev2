@@ -3,7 +3,7 @@ import { ProjectsService } from '../projects.service';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { NgbCarouselConfig, NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
-import { ChromoLanguageService } from '../chromo-language.service'
+import { ChromoLanguageService } from '../chromo-language.service';
 
 
 @Component({

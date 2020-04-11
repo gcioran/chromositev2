@@ -19,6 +19,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { DetailedProjectComponent } from './detailed-project/detailed-project.component';
+import { CookiePolicyComponent } from './cookie-policy/cookie-policy.component';
 
 declare var Hammer: any;
 
@@ -43,7 +44,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     ProjectsComponent,
     ContactComponent,
-    DetailedProjectComponent
+    DetailedProjectComponent,
+    CookiePolicyComponent
   ],
   imports: [
     BrowserModule,

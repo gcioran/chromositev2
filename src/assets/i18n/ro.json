@@ -7,6 +7,11 @@
     "contact" : "CONTACT",
     "close" : "INCHIDE"
   },
+  "cookies": {
+    "message" : "Acest website foloseste cookie-uri pentru a se asigura ca primiți cea mai bună experiență pe website-ul nostru. Continuarea navigării reprezintă acceptul dvs. pentru această folosință.",
+    "dismiss" : "Ok",
+    "link": "Află mai multe"
+  },
   "about" : {
     "architecture" : "ARHITECTURA",
     "interior" : "DESIGN DE INTERIOR",
