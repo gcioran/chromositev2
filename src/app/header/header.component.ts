@@ -8,7 +8,7 @@ import { ChromoLanguageService } from '../chromo-language.service'
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  private dispayedLanguage: string;
+  public dispayedLanguage: string;
   public currentLanguage: string;
 
   constructor(private translate: TranslateService, private languageService: ChromoLanguageService) {

@@ -33,7 +33,10 @@
   },
   "team" : {
     "title" : "THE TEAM",
-    "job" : "architect"
+    "job" : {
+      "architect": "architect",
+      "stagiar": "architectural assistant"
+    }
   },
   "contact" : {
     "title" : "CONTACT",

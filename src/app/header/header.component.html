@@ -1,6 +1,6 @@
 <div id="app" class="container">
     <nav class="navbar navbar-expand-lg fixed-top navbar-light justify-content-between text-dark bg-white py-0 chromo-shadow">
-        <a class="navbar-brand" routerLink="/home" >
+        <a class="navbar-brand" href="https://chromosomearchitecture.ro/" >
           <picture>
               <source srcset="images/logo1.webp" type="image/webp">
               <source srcset="images/logo1.jpg" type="image/jpeg">
@@ -20,11 +20,18 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
               <a class="nav-link" routerLink="/projects">
-                <span class="fa fa-th"></span> {{ 'load.navigation.projects' | translate }}</a>
+                {{ 'load.navigation.projects' | translate }}
+              </a>
             </li>
             <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <a class="nav-link" routerLink="/contact">
-                  <span class="fa fa-envelope"></span> {{ 'load.navigation.contact' | translate }}</a>
+                  {{ 'load.navigation.contact' | translate }}
+                </a>
+            </li>
+            <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" routerLink="/about">
+                {{ 'load.navigation.about' | translate }}
+              </a>
             </li>
             <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <a (click)="changeLanguage()" class="nav-link"><i class="fa fa-language"></i>  {{dispayedLanguage}}</a>
