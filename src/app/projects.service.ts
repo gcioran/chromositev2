@@ -6,12 +6,147 @@ import { Injectable } from '@angular/core';
 
 export class ProjectsService {
   items = [
+  {path:'images/projects/O House/1',
+  text:'O House',
+  sideDescription: {
+    title: 'O House',
+    body : {RO: 'Locație: Sânandrei, România\nCategorie: Rezidențial\nSuprafață teren: 500 mp\nSuprafață construită: 150 mp',
+            EN: 'Location: Sânandrei, Romania\nCategory: Residential\nLand area: 500 sq m\nBuild-up area: 150 sq m '}
+  },
+    src:[
+    {pic:'images/projects/O House/1'},
+    {pic:'images/projects/O House/2'},
+    {pic:'images/projects/O House/3'},
+    {pic:'images/projects/O House/4'},
+    {pic:'images/projects/O House/5'},
+    {pic:'images/projects/O House/6'},
+    {pic:'images/projects/O House/7'},
+    // {text : {RO: '',
+    //         EN: ''}
+    // }
+    ]
+  },
+  {path:'images/projects/MDA House/1',
+  text:'MDA House',
+  sideDescription: {
+    title: 'MDA House',
+    body : {RO: 'Locație: Oravița, România\nCategorie: Rezidențial\nSuprafață teren: 1.235 mp\nSuprafață construită: 160 mp',
+            EN: 'Location: Oravita, Romania\nCategory: Residential\nLand area: 1.235 sq m\nBuild-up area: 160 sq m'}
+  },
+    src:[
+    {pic:'images/projects/MDA House/1'},
+    {pic:'images/projects/MDA House/2'},
+    {pic:'images/projects/MDA House/3'},
+    {pic:'images/projects/MDA House/4'},
+    {pic:'images/projects/MDA House/5'},
+    // {text : {RO: '',
+    //         EN: ''}
+    // }
+    ]
+  },
+  {path:'images/projects/P House/1',
+  text:'P House',
+  sideDescription: {
+    title: 'P House',
+    body : {RO: 'Locație: Moșnița, România\nCategorie: Rezidențial\nSuprafață teren: 621 mp\nSuprafață construită: 240 mp',
+            EN: 'Location:Moșnița, Romania\nCategory: Residential\nLand area: 621 sq m\nBuild-up area: 240 sq m'}
+  },
+    src:[
+    {pic:'images/projects/P House/1'},
+    {pic:'images/projects/P House/2'},
+    {pic:'images/projects/P House/3'},
+    {pic:'images/projects/P House/4'}
+    ]
+  },
+  {path:'images/projects/RC Residence/1',
+  text:'RC Residence',
+  sideDescription: {
+    title: 'RC Residence',
+    body : {RO: 'CHROMOSOME x BMB Concept\nLocație: Timișoara, România\nCategorie: Rezidențial\nSuprafață teren: 2.100 mp\nSuprafață construită: 1.900 mp',
+            EN: 'CHROMOSOME x BMB Concept\nLocation: Timișoara, Romania\nCategory: Residential\nLand area: 2.100 sq m\nBuild-up area: 1.900 sq m '}
+  },
+    src:[
+    {pic:'images/projects/RC Residence/1'},
+    {pic:'images/projects/RC Residence/2'},
+    {pic:'images/projects/RC Residence/3'},
+    {pic:'images/projects/RC Residence/4'},
+    {pic:'images/projects/RC Residence/5'}
+    ]
+  },
+  {path:'images/projects/DPX houses/P7/P700',
+  text:'DPX no. 7',
+  sideDescription: {
+    title: 'DPX no. 7',
+    body : {RO: 'Locație: Moșnița, România\nCategorie: Rezidențial\nSuprafață teren: 786 mp\nSuprafață construită: 213.72 mp',
+            EN: 'Location: Moșnița, Romania\nCategory: Residential\nLand area: 786 sq m\nBuild-up area: 213.72 sq m '}
+  },
+    src:[
+    {pic:'images/projects/DPX houses/P7/P700'},
+    {pic:'images/projects/DPX houses/P7/P701'},
+    {pic:'images/projects/DPX houses/P7/P702'},
+    {pic:'images/projects/DPX houses/P7/P703'},
+    {pic:'images/projects/DPX houses/P7/P704'},
+    {pic:'images/projects/DPX houses/P7/P705'},
+    // {text : {RO: '',
+    //         EN: ''}
+    // }
+    ]
+  },
+  {path:'images/projects/DPX houses/P15/P1501',
+  text:'DPX no. 15',
+  sideDescription: {
+    title: 'DPX no. 15',
+    body : {RO: 'Locație: Moșnița, România\nCategorie: Rezidențial\nSuprafață teren: 678 mp\nSuprafață construită: 159.16 mp',
+            EN: 'Location: Moșnița, Romania\nCategory: Residential\nLand area: 678 sq m\nBuild-up area: 159.16 sq m'}
+  },
+    src:[
+    {pic:'images/projects/DPX houses/P15/P1501'},
+    {pic:'images/projects/DPX houses/P15/P1502'},
+    {pic:'images/projects/DPX houses/P15/P1503'},
+    {pic:'images/projects/DPX houses/P15/Cartier01'},
+    {pic:'images/projects/DPX houses/P15/Cartier02'},
+    {pic:'images/projects/DPX houses/P15/CartierDaynoNewimoA'},
+    {pic:'images/projects/DPX houses/P15/CartierNightnonewimoB'},
+    // {text : {RO: '',
+    //         EN: ''}
+    // }
+    ]
+  },
+  {path: 'images/projects/V_Extension/0',
+  text: 'V Extension',
+  sideDescription: {
+    title: 'V Extension',
+    body : {RO: 'Locație: Vinga, România\nCategorie: Rezidențial\nSuprafață teren: 1200 mp\nSuprafața construita: 180 mp',
+            EN: 'Location: Vinga, România\nCategory: Residential\nArea: 1200 sq m\nBuilt-up area: 180 sq m'}
+    },
+  src:[
+{pic: 'images/projects/V_Extension/0'},
+{pic: 'images/projects/V_Extension/1'},
+{pic: 'images/projects/V_Extension/2'},
+{pic: 'images/projects/V_Extension/3'}
+    ]
+  },
+  {path:'images/projects/Industrial architecture/Hala/1',
+  text:'N industries',
+  sideDescription: {
+    title: 'N industries',
+    body : {RO: 'CHROMOSOME x BMB Concept\nLocație: Nădab, Arad, România\nCategorie: Arhitecură industrială\nSuprafață teren: 37.000 mp\nSuprafață construită: 8.800 mp',
+            EN: 'CHROMOSOME x BMB Concept\nLocation: Nădab, Arad, Romania\nCategory: Industrial architecture\nLand area: 37.000 sq m\nBuild-up area: 8.800 sq m'}
+  },
+    src:[
+    {pic:'images/projects/Industrial architecture/Hala/1'},
+    {pic:'images/projects/Industrial architecture/Hala/2'},
+    // {text : {RO: '',
+    //         EN: ''}
+    // }
+    ]
+  },
     {path: 'images/projects/MP_Studio/01',
     text: 'MP Studio',
     sideDescription: {
       title: 'MP Studio',
-      body : {RO: 'Locație: Timisoara, România\nCategorie: Amenajare interioară\nSuprafață: teren: 35 mp\n\nAutor: Dana Ardelean\nCoautor: Gabriela Sava',
-              EN: 'Location: Timisoara, România\nCategory: Interior design\nArea: 35 sq m\n\nAuthor: Dana Ardelean\nCoauthor: Gabriela Sava'}
+      body : {RO: 'Locație: Timisoara, România\nCategorie: Amenajare interioară\nSuprafață: teren: 35 mp\n\nAutor: Dana Cioran\nCoautor: Gabriela Sava',
+              EN: 'Location: Timisoara, România\nCategory: Interior design\nArea: 35 sq m\n\nAuthor: Dana Cioran\nCoauthor: Gabriela Sava'}
       },
     src:[
 {pic: 'images/projects/MP_Studio/01'},
@@ -21,26 +156,12 @@ export class ProjectsService {
 {pic: 'images/projects/MP_Studio/05'}
       ]
     },
-    {path: 'images/projects/V_Extension/01',
-    text: 'V Extension',
-    sideDescription: {
-      title: 'V Extension',
-      body : {RO: 'Locație: Vinga, România\nCategorie: Rezidențial\nSuprafață teren: 1200 mp\nSuprafața construita: 180 mp \n\nAutor: Dana Ardelean',
-              EN: 'Location: Vinga, România\nCategory: Residential\nArea: 1200 sq m\nBuilt-up area: 180 sq m \n\nAuthor: Dana Ardelean'}
-      },
-    src:[
-{pic: 'images/projects/V_Extension/01'},
-{pic: 'images/projects/V_Extension/02'},
-{pic: 'images/projects/V_Extension/03'},
-{pic: 'images/projects/V_Extension/04'}
-      ]
-    },
     {path: 'images/projects/AldraDent/01',
     text: 'AldraDent',
     sideDescription: {
       title: 'AldraDent',
-      body : {RO: 'Locație: Cluj-Napoca, România\nCategorie: Amenajare interioară\nSuprafață: 70 mp\n\nAutor: Dana Ardelean',
-              EN: 'Location: Cluj-Napoca, România\nCategory: Interior design\nArea: 70 sq m\n\nAuthor: Dana Ardelean'}
+      body : {RO: 'Locație: Cluj-Napoca, România\nCategorie: Amenajare interioară\nSuprafață: 70 mp\n\nAutor: Dana Cioran',
+              EN: 'Location: Cluj-Napoca, România\nCategory: Interior design\nArea: 70 sq m\n\nAuthor: Dana Cioran'}
       },
     src:[
 {pic: 'images/projects/AldraDent/01'},
@@ -57,8 +178,8 @@ export class ProjectsService {
     text:'H.LA House',
     sideDescription: {
       title: 'H.LA House',
-      body : {RO: 'Locație: Giarmata, România\nCategorie: Rezidențial\nSuprafață: teren: 594 mp\nSuprafața construita: 292 mp \n\nAutor: Dana Ardelean\nColaboratori: Bogdan Duica, Petra Popa',
-              EN: 'Location: Giarmata, România\nCategory: Residential\nArea: 594 sq m\nBuilt-up area: 292 sq m \n\nAuthor: Dana Ardelean\nCollaborators: Bogdan Duica, Petra Popa'}
+      body : {RO: 'Locație: Giarmata, România\nCategorie: Rezidențial\nSuprafață: teren: 594 mp\nSuprafața construita: 292 mp \n\nAutor: Dana Cioran\nColaboratori: Bogdan Duica, Petra Popa',
+              EN: 'Location: Giarmata, România\nCategory: Residential\nArea: 594 sq m\nBuilt-up area: 292 sq m \n\nAuthor: Dana Cioran\nCollaborators: Bogdan Duica, Petra Popa'}
       },
     src:[
 {pic:'images/projects/Hreniuc/01'},
@@ -72,8 +193,8 @@ export class ProjectsService {
     text:'AVA Office',
     sideDescription: {
       title: 'AVA Office',
-      body : {RO: 'Locație: Timișoara, România\nCategorie: Amenajare interioară\nSuprafață: teren: 21 mp\n\nAutor: Zeno Ardelean\nCoautor: Dana Ardelean',
-              EN: 'Location: Timișoara, România\nCategory: Interior design\nArea: 21 sq m\n\nAuthor: Zeno Ardelean\nCoauthor: Dana Ardelean'}
+      body : {RO: 'Locație: Timișoara, România\nCategorie: Amenajare interioară\nSuprafață: teren: 21 mp\n\nAutor: Zeno Ardelean\nCoautor: Dana Cioran',
+              EN: 'Location: Timișoara, România\nCategory: Interior design\nArea: 21 sq m\n\nAuthor: Zeno Ardelean\nCoauthor: Dana Cioran'}
       },
     drawings:8,
     src:[
@@ -92,8 +213,8 @@ export class ProjectsService {
     text:'BATH design',
     sideDescription: {
       title: 'BATH design',
-      body : {RO: 'Locație: Timișoara, România\nCategorie: Amenajare interioară\nSuprafață: 3 mp\n\nAutor: Dana Ardelean\nFoto: Ovidiu Micșa',
-              EN: 'Location: Timișoara, România\nCategory: Interior design\nArea: 3 sq m\n\nAuthor: Dana Ardelean\nPhoto: Ovidiu Micșa'}
+      body : {RO: 'Locație: Timișoara, România\nCategorie: Amenajare interioară\nSuprafață: 3 mp\n\nAutor: Dana Cioran\nFoto: Ovidiu Micșa',
+              EN: 'Location: Timișoara, România\nCategory: Interior design\nArea: 3 sq m\n\nAuthor: Dana Cioran\nPhoto: Ovidiu Micșa'}
       },
     src:[
 {pic:'images/projects/BATH_design/03cover'},
@@ -115,8 +236,8 @@ EN: 'To optimize a very small space, functionality is important. All objects are
     text:'CH Office',
     sideDescription: {
       title: 'CHROMOSOME Office',
-      body : {RO: 'Locație: Utvin, România\nCategorie: Amenajare interioară\nSuprafață: 65 mp\n\nAutor: Dana Ardelean, Zeno Ardelean\nFoto: Norbert Ianko',
-              EN: 'Location: Utvin, România\nCategory: Interior design\nArea: 65 sq m\n\nAuthor: Dana Ardelean, Zeno Ardelean\nPhoto: Norbert Ianko'}
+      body : {RO: 'Locație: Utvin, România\nCategorie: Amenajare interioară\nSuprafață: 65 mp\n\nAutor: Dana Cioran, Zeno Ardelean\nFoto: Norbert Ianko',
+              EN: 'Location: Utvin, România\nCategory: Interior design\nArea: 65 sq m\n\nAuthor: Dana Cioran, Zeno Ardelean\nPhoto: Norbert Ianko'}
       },
     drawings:2,
     src:[
@@ -140,8 +261,8 @@ EN: 'To optimize a very small space, functionality is important. All objects are
     text:'SDLT',
     sideDescription: {
       title: 'SDLT Extension',
-      body : {RO: 'Locație: Timișoara, România\nCategorie: Rezidențial\nSuprafață teren: 468 mp\nSuprafață constructie\nexistentă: 155 mp\nSuprafață extindere: 110 mp\n\nAutor: Dana Ardelean',
-              EN: 'Location: Timișoara, România\nCategory: Residential\nLand area: 468 sq m\nExisting built-up area 155 sq m\nExtension area: 110 sq m\n\nAuthor: Dana Ardelean'}
+      body : {RO: 'Locație: Timișoara, România\nCategorie: Rezidențial\nSuprafață teren: 468 mp\nSuprafață constructie\nexistentă: 155 mp\nSuprafață extindere: 110 mp\n\nAutor: Dana Cioran',
+              EN: 'Location: Timișoara, România\nCategory: Residential\nLand area: 468 sq m\nExisting built-up area 155 sq m\nExtension area: 110 sq m\n\nAuthor: Dana Cioran'}
       },
     src:[
 {pic:'images/projects/SDLT_Extension/cover06'},
@@ -157,8 +278,8 @@ EN: 'To optimize a very small space, functionality is important. All objects are
     text:'S House',
     sideDescription: {
       title: 'SEITIN House',
-      body : {RO: 'Locație: Șeitin, România\nCategorie: Rezidențial\nSuprafață: teren: 1854 mp\nSuprafață: construită: 255 mp\n\nAutor: Dana Ardelean',
-              EN: 'Location: Șeitin, România\nCategory: Residential\nLand area: 1854 sq m\nBuilt-up area 1854 sq m\n\nAuthor: Dana Ardelean'}
+      body : {RO: 'Locație: Șeitin, România\nCategorie: Rezidențial\nSuprafață: teren: 1854 mp\nSuprafață: construită: 255 mp\n\nAutor: Dana Cioran',
+              EN: 'Location: Șeitin, România\nCategory: Residential\nLand area: 1854 sq m\nBuilt-up area 1854 sq m\n\nAuthor: Dana Cioran'}
       },
     src:[
 {pic:'images/projects/SEITIN_House/01'},
@@ -171,8 +292,8 @@ EN: 'To optimize a very small space, functionality is important. All objects are
     text:'Coffeehouse',
     sideDescription: {
       title: 'Coffeehouse',
-      body : {RO: 'Locație: Timișoara, România\nCategorie: Amenajare interioară\nSuprafață: 80 mp\n\nAutor: Dana Ardelean, Zeno Ardelean',
-              EN: 'Location: Timișoara, România\nCategory: Interior design\nArea: 80 sq m\n\nAuthor: Dana Ardelean, Zeno Ardelean'}
+      body : {RO: 'Locație: Timișoara, România\nCategorie: Amenajare interioară\nSuprafață: 80 mp\n\nAutor: Dana Cioran, Zeno Ardelean',
+              EN: 'Location: Timișoara, România\nCategory: Interior design\nArea: 80 sq m\n\nAuthor: Dana Cioran, Zeno Ardelean'}
       },
     src:[
 {pic:'images/projects/Coffee_house/cover01'},
@@ -193,8 +314,8 @@ EN: 'The idea of setting up the café was carefully outlined in terms of locatio
     text:'CA House',
     sideDescription: {
       title: 'CA House',
-      body : {RO: 'Locație: Moșnița, România\nCategorie: Rezidențial\nSuprafață: teren: 463 mp\nSuprafață: construită: 185 mp\n\nAutor: Dana Ardelean\nCoautor: Zeno Ardelean',
-              EN: 'Location: Moșnița, România\nCategory: Residential\nLand area: 463 sq m\nBuilt-up area 185 sq m\n\nAuthor: Dana Ardelean\nCoauthor: Zeno Ardelean'}
+      body : {RO: 'Locație: Moșnița, România\nCategorie: Rezidențial\nSuprafață: teren: 463 mp\nSuprafață: construită: 185 mp\n\nAutor: Dana Cioran\nCoautor: Zeno Ardelean',
+              EN: 'Location: Moșnița, România\nCategory: Residential\nLand area: 463 sq m\nBuilt-up area 185 sq m\n\nAuthor: Dana Cioran\nCoauthor: Zeno Ardelean'}
       },
     drawings:5,
     src:[
@@ -219,8 +340,8 @@ EN: 'The idea of setting up the café was carefully outlined in terms of locatio
     text:'LE MONOLITHE',
     sideDescription: {
       title: 'LE MONOLITHE',
-      body : {RO: 'Concurs\n\nAutor: Dana Ardelean\nCoautor: Zeno Ardelean',
-              EN: 'Competition\n\nAuthor: Dana Ardelean\nCoauthor: Zeno Ardelean'}
+      body : {RO: 'Concurs\n\nAutor: Dana Cioran\nCoautor: Zeno Ardelean',
+              EN: 'Competition\n\nAuthor: Dana Cioran\nCoauthor: Zeno Ardelean'}
     },
      src:[
      {pic:'images/projects/LE_MONOLITHE/01'},
@@ -229,48 +350,12 @@ EN: 'The idea of setting up the café was carefully outlined in terms of locatio
      }
       ]
     },
-    {path:'images/projects/N_APARTMENT/01_LVG02x-2',
-    text:'N Apartament',
-    sideDescription: {
-      title: 'N Apartament',
-      body : {RO: 'Locație: Timișoara, România\nCategorie: Amenajare interioară\nSuprafață: 55 mp\n\nAutor: Zeno Ardelean\nCoautor: Dana Ardelean\nExecuție Mobilier: Slobodan Ilijevic',
-              EN: 'Location: Timișoara, România\nCategory: Interior design\nArea 55 sq m\n\nAuthor: Zeno Ardelean\nCoauthor: Dana Ardelean'}
-      },
-    drawings:8,
-    src:[
-     {pic:'images/projects/N_APARTMENT/01_LVG02x-2'},
-     {pic:'images/projects/N_APARTMENT/02_N_LOCATION'},
-     {pic:'images/projects/N_APARTMENT/03_N_APT_TABLE 3'},
-     {pic:'images/projects/N_APARTMENT/04_N_APT_TABLE1'},
-     {pic:'images/projects/N_APARTMENT/05_N_APT_TABLE 4'},
-     {pic:'images/projects/N_APARTMENT/06_N_APT_TABLE 5'},
-     {pic:'images/projects/N_APARTMENT/07_N_APT_TABLE 6'},
-     {pic:'images/projects/N_APARTMENT/08_N_APT_TABLE2'},
-     {pic:'images/projects/N_APARTMENT/09_PLAN'},
-     {pic:'images/projects/N_APARTMENT/10_SCHEMA1'},
-     {pic:'images/projects/N_APARTMENT/11_SCHEMA2'},
-     {pic:'images/projects/N_APARTMENT/12_SCHEMA3'},
-     {pic:'images/projects/N_APARTMENT/13_SCHEMA4'},
-     {pic:'images/projects/N_APARTMENT/14_SCHEMA7'},
-     {pic:'images/projects/N_APARTMENT/15_SCHEMA8'},
-     {pic:'images/projects/N_APARTMENT/16'},
-     {pic:'images/projects/N_APARTMENT/17'},
-     {pic:'images/projects/N_APARTMENT/18'},
-     {text : {RO: 'Situat la o mansardă de clădire din țesut istoric, apartamentul avea un spațiu dificil de partiționat și mobilat. Provocarea a fost redistribuirea totală a compartimentării inițiale. Astfel zona de noapte se limitează la latura scurtă a apartamentului, iar zona de zi înșiruie livingul, locul de luat masa și bucătăria de-a lungul laturii vestice. La cel mai abstract nivel, proiectul se reduce la o bandă care înfășoară zona de zi și la un cub care închide zona de noapte. Un'+ 'mare aport asupra proiectului l-a avut mobilierul integrat, custom-made. Dat fiind spațiul dificil, foarte îngust și lung, mobilarea accentuează forma și e neîntreruptă, creând senzația de spațialitate. De asemenea, spațiile de depozitare sunt ascunse fie în pereții exteriori, fie în peretele interior. Niciun element din mobilierul fix nu caută să iasă în evidență, totul devine un fundal pentru canapeaua modulară.'+
-' Aceasta, împreună cu măsuța custom-made animă spațiul în diverse situații, devenind pat, canapea, fotolii, în funcție de nevoile de moment ale beneficiarului. Cromatica apartamentului și distribuirea sa caută să pună în evidență exteriorul apartamentului, un cartier istoric de secol XIX care încă își păstrează farmecul.'
-,
- EN: 'Situated in the loft of a historical building, the apartment contained a space which was difficult to partition and furnish. The challenge was to fully re-design the initial compartmentation. Therefore, the night area was placed in the short side of the apartment, while the day area included the living-room, the dining-room and the kitchen in the west side. The project can be abstractly reduced to a belt that wraps the living area and a cube which closes up the sleeping'+ 'area. A great contribution to the project was the custom-made, built-in furniture. Given that the space was very narrow and long which made it difficult to handle, the furniture underlines its uninterrupted shape, visually increasing its spatiality. Also, the storage areas are hidden either in the exterior walls or the inner continuous wall. None of the fixed furniture pieces stand out, but they create a background for the modular sofa.'+
-'Together with the custom-made coffee table, the colorful sofa animates the space and it can turn into a bed or a set of armchairs to meet the needs of the owner. The colors of the apartment and its simple compartmentation attempt to highlight the exterior of the lodging – a historical district which is trying to preserve the charm of the 19th century.'
-}
-     }
-      ]
-    },
     {path:'images/projects/RB_House/C2',
     text:'RB House',
     sideDescription: {
       title: 'RB House',
-      body : {RO: 'Locație: Giarmata, România\nCategorie: Rezidential\nSuprafață: teren: 400 mp\nSuprafață: construită: 125 mp\n\nAutor: Dana Ardelean, Zeno Ardelean',
-              EN: 'Location: Giarmata, România\nCategory: Residential\nLand area: 400 sq m\nBuilt-up area: 125 sq m\n\nAuthor: Dana Ardelean, Zeno Ardelean'}
+      body : {RO: 'Locație: Giarmata, România\nCategorie: Rezidential\nSuprafață: teren: 400 mp\nSuprafață: construită: 125 mp\n\nAutor: Dana Cioran, Zeno Ardelean',
+              EN: 'Location: Giarmata, România\nCategory: Residential\nLand area: 400 sq m\nBuilt-up area: 125 sq m\n\nAuthor: Dana Cioran, Zeno Ardelean'}
       },
     drawings:2,
     src:[
@@ -290,64 +375,12 @@ EN: 'The idea of setting up the café was carefully outlined in terms of locatio
      }
       ]
     },
-    {path:'images/projects/preluari/CASA_BALABAN/16',
-    text:'BLB House',
-    sideDescription: {
-      title: 'BLB House',
-      body : {RO: 'Locație: Timișoara, România\nCategorie: preluare / refurbished // Amenajare interioară\nSuprafață:: 285 mp\n\nAutor: Dana Ardelean\nCoautor: Zeno Ardelean',
-              EN: 'Location: Timișoara, România\nCategory: Refurbished // Interior design\nArea: 285 sq m\n\nAuthor: Dana Ardelean\nCoauthor: Zeno Ardelean'}
-      },
-    src:[
-     {pic:'images/projects/preluari/CASA_BALABAN/16'},
-     {pic:'images/projects/preluari/CASA_BALABAN/09'},
-     {pic:'images/projects/preluari/CASA_BALABAN/10'},
-     {pic:'images/projects/preluari/CASA_BALABAN/11'},
-     {pic:'images/projects/preluari/CASA_BALABAN/12'},
-     {pic:'images/projects/preluari/CASA_BALABAN/13'},
-     {pic:'images/projects/preluari/CASA_BALABAN/14'},
-     {pic:'images/projects/preluari/CASA_BALABAN/15'},
-     {pic:'images/projects/preluari/CASA_BALABAN/17'},
-     {pic:'images/projects/preluari/CASA_BALABAN/18'},
-     {pic:'images/projects/preluari/CASA_BALABAN/19'},
-     {text : {RO: 'Locuința a fost preluată în faza „la roșu”. Intervențiile au constat în două etape: refațadizarea + amenajarea exterioară și amenajarea interioară. În primă fază s-au epurat formele, s-au înlocuit balustradele metalice cu balustrade de sticlă și s-a adosat o terasă spre curtea din spate. Fațadele au fost prelucrate și s-a ales folosirea de accente cromatice care să sublinieze volumetria. Interiorul este tratat unitar, zona de zi având aceleași materiale și texturi. Se urmărește obținerea luminii naturale într-o proporție cât mai ridicată, lucru ce conduce la suprafețe albe, lucioase, reflectante.',
-             EN: 'We started from a partly finished house. The interventions consisted of two phases: redesigning the façade + exterior and interior design. In the first phase, we cleaned the general shapes, we replaced the metallic handrails with glass handrails, and we adjoined a terrace to the backyard. Then we redesigned the façade using a chromatic rhythm to highlight the structure.'}
-     }
-      ]
-    },
-    {path:'images/projects/preluari/CASA_TICULA/12',
-    text:'TCL House',
-    sideDescription: {
-      title: 'TCL House',
-      body : {RO: 'Locație: Dumbrăvița, jud. Timiș, România\nCategorie: preluare / refurbished // Amenajare interioară\nSuprafață:: 290 mp\n\nAutor: Dana Ardelean, Zeno Ardelean',
-              EN: 'Location: Dumbrăvița, jud. Timiș, România\nCategory: Refurbished // Interior design\nArea: 290 sq m\n\nAuthor: Dana Ardelean, Zeno Ardelean'}
-      },
-    src:[
-      {pic:'images/projects/preluari/CASA_TICULA/12'},
-      {pic:'images/projects/preluari/CASA_TICULA/02_T_HOUSE_LOCATION'},
-      {pic:'images/projects/preluari/CASA_TICULA/03_existent01'},
-      {pic:'images/projects/preluari/CASA_TICULA/04_existent02'},
-      {pic:'images/projects/preluari/CASA_TICULA/05_propus01'},
-      {pic:'images/projects/preluari/CASA_TICULA/06'},
-      {pic:'images/projects/preluari/CASA_TICULA/07_propus02'},
-      {pic:'images/projects/preluari/CASA_TICULA/08'},
-      {pic:'images/projects/preluari/CASA_TICULA/09_propus03'},
-      {pic:'images/projects/preluari/CASA_TICULA/10'},
-      {pic:'images/projects/preluari/CASA_TICULA/11'},
-      {pic:'images/projects/preluari/CASA_TICULA/12'},
-      {pic:'images/projects/preluari/CASA_TICULA/13'},
-      {pic:'images/projects/preluari/CASA_TICULA/14'},
-      {pic:'images/projects/preluari/CASA_TICULA/01'},
-     {text : {RO: 'Fațada inițială era foarte diversă și golurile nu se aliniau. Așadar am abordat o metodă prin care să unificăm parterul folosind piatră de culoare închisă. Terasa dinspre dormitor a fost închisă de un grilaj semitransparent pentru a oferi intimitate. Lemnul folosit la exterior se continuă și în încăperi, combinându-se cu pereții și mobilierul alb. Micile obiecte de iluminat și de decor ale beneficiarului completează fundalul preponderent alb. Patru stâlpi de rezistență din interiorul livingului au fost înglobați în mobilier și au fost mascați pentru a li se diminua prezența.',
-             EN: 'The initial façade was very diverse and the gaps did not follow the same line. We considered an approach to unite the ground floor by using dark-colored stone. For more intimacy, the terrace outside the bedroom was concealed with the help of a translucid metal mesh. The wood used outside continues inside as well, merging with the white walls and furniture. The small lighting elements and the personal decorative objects fill the predominantly white background. The four structural columns inside the living-room were incorporated in the furniture and overall concealed.'}
-     }
-      ]
-    },
     {path:'images/projects/preluari/MAGAZIN_DUMBRAVITA/01',
     text:'DB Shop Facade',
     sideDescription: {
       title: 'DB Shop Facade',
-      body : {RO: 'Locație: Dumbrăvița, jud. Timiș, România\nCategorie: preluare / refurbished\n\nAutor: Dana Ardelean',
-              EN: 'Location: Dumbrăvița, jud. Timiș, România\nCategory: Refurbished\n\nAuthor: Dana Ardelean'}
+      body : {RO: 'Locație: Dumbrăvița, jud. Timiș, România\nCategorie: preluare / refurbished\n\nAutor: Dana Cioran',
+              EN: 'Location: Dumbrăvița, jud. Timiș, România\nCategory: Refurbished\n\nAuthor: Dana Cioran'}
       },
     src:[
      {pic:'images/projects/preluari/MAGAZIN_DUMBRAVITA/01'},
@@ -360,27 +393,12 @@ EN: 'The idea of setting up the café was carefully outlined in terms of locatio
      }
     ]
     },
-    {path:'images/projects/Burgerhouse/cover01',
-    text:'Burgerhouse',
-    sideDescription: {
-      title: 'Burgerhouse',
-      body : {RO: 'Locație: Timișoara, România\nCategorie: Amenajare interioară\nSuprafață: 45 mp\n\nAutor: Dana Ardelean, Zeno Ardelean',
-              EN: 'Location: Timișoara, România\nCategory: Interior design\nArea: 45 sq m\n\nAuthor: Dana Ardelean, Zeno Ardelean'}
-      },
-    src:[
-{pic:'images/projects/Burgerhouse/cover01'},
-{pic:'images/projects/Burgerhouse/location'},
-{pic:'images/projects/Burgerhouse/02'},
-{pic:'images/projects/Burgerhouse/03'},
-{pic:'images/projects/Burgerhouse/04'}
-      ]
-    },
     {path:'images/projects/preluari/ACCES_BRUNCH/cover',
     text:'BRUNCH Access',
     sideDescription: {
       title: 'BRUNCH Access',
-      body : {RO: 'Locație: Timișoara, România\nCategorie: preluare / refurbished\n\nAutor: Dana Ardelean\nCoautor: Zeno Ardelean',
-              EN: 'Location: Timișoara, România\nCategory: Refurbished\n\nAuthor: Dana Ardelean\nCoauthor: Zeno Ardelean'}
+      body : {RO: 'Locație: Timișoara, România\nCategorie: preluare / refurbished\n\nAutor: Dana Cioran\nCoautor: Zeno Ardelean',
+              EN: 'Location: Timișoara, România\nCategory: Refurbished\n\nAuthor: Dana Cioran\nCoauthor: Zeno Ardelean'}
       },
     drawings:3,
     src:[
@@ -390,7 +408,6 @@ EN: 'The idea of setting up the café was carefully outlined in terms of locatio
      {pic:'images/projects/preluari/ACCES_BRUNCH/03_schema1'},
      {pic:'images/projects/preluari/ACCES_BRUNCH/04'},
      {pic:'images/projects/preluari/ACCES_BRUNCH/05realizat'},
-     {pic:'images/projects/preluari/ACCES_BRUNCH/06'},
      {text : {RO: 'Accesul în Brunch a fost tratat ca o primă intervenție pe fațada clădirii. Se propune redefinirea parterului întregii fațade prin folosirea unei geometrii unitare. Cutia contorsionată preia liniile de pe fațadă și le reinterpretează. Golul se aliniază cu solbancul ferestrei de deasupra și forma de pâlnie invită trecătorii spre acces.',
              EN: 'Designing the access to Brunch mini-restaurant became a first intervention on the façade of the building. We proposed a redefinition of the ground floor for the entire building by using a unitary geometry. The twisted box takes over the lines on the façade and re-interprets them. The excavated door is in perfect line with the window sill above, while the rectangular funnel shape invites the passers-by inside.'}
      }
