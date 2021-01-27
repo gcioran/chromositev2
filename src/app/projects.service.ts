@@ -126,21 +126,21 @@ export class ProjectsService {
 {pic: 'images/projects/V_Extension/3'}
     ]
   },
-  {path:'images/projects/Industrial architecture/Hala/1',
-  text:'N industries',
-  sideDescription: {
-    title: 'N industries',
-    body : {RO: 'CHROMOSOME x BMB Concept\nLocație: Nădab, Arad, România\nCategorie: Arhitecură industrială\nSuprafață teren: 37.000 mp\nSuprafață construită: 8.800 mp',
-            EN: 'CHROMOSOME x BMB Concept\nLocation: Nădab, Arad, Romania\nCategory: Industrial architecture\nLand area: 37.000 sq m\nBuild-up area: 8.800 sq m'}
-  },
-    src:[
-    {pic:'images/projects/Industrial architecture/Hala/1'},
-    {pic:'images/projects/Industrial architecture/Hala/2'},
-    // {text : {RO: '',
-    //         EN: ''}
-    // }
-    ]
-  },
+  // {path:'images/projects/Industrial architecture/Hala/1',
+  // text:'N industries',
+  // sideDescription: {
+  //   title: 'N industries',
+  //   body : {RO: 'CHROMOSOME x BMB Concept\nLocație: Nădab, Arad, România\nCategorie: Arhitecură industrială\nSuprafață teren: 37.000 mp\nSuprafață construită: 8.800 mp',
+  //           EN: 'CHROMOSOME x BMB Concept\nLocation: Nădab, Arad, Romania\nCategory: Industrial architecture\nLand area: 37.000 sq m\nBuild-up area: 8.800 sq m'}
+  // },
+  //   src:[
+  //   {pic:'images/projects/Industrial architecture/Hala/1'},
+  //   {pic:'images/projects/Industrial architecture/Hala/2'},
+  //   // {text : {RO: '',
+  //   //         EN: ''}
+  //   // }
+  //   ]
+  // },
     {path: 'images/projects/MP_Studio/01',
     text: 'MP Studio',
     sideDescription: {
@@ -178,8 +178,8 @@ export class ProjectsService {
     text:'H.LA House',
     sideDescription: {
       title: 'H.LA House',
-      body : {RO: 'Locație: Giarmata, România\nCategorie: Rezidențial\nSuprafață: teren: 594 mp\nSuprafața construita: 292 mp \n\nAutor: Dana Cioran\nColaboratori: Bogdan Duica, Petra Popa',
-              EN: 'Location: Giarmata, România\nCategory: Residential\nArea: 594 sq m\nBuilt-up area: 292 sq m \n\nAuthor: Dana Cioran\nCollaborators: Bogdan Duica, Petra Popa'}
+      body : {RO: 'CHROMOSOME x BMB Concept\nLLocație: Giarmata, România\nCategorie: Rezidențial\nSuprafață: teren: 594 mp\nSuprafața construita: 292 mp',
+              EN: 'CHROMOSOME x BMB Concept\nLLocation: Giarmata, România\nCategory: Residential\nArea: 594 sq m\nBuilt-up area: 292 sq m'}
       },
     src:[
 {pic:'images/projects/Hreniuc/01'},
