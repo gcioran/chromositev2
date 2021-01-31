@@ -11,3 +11,14 @@ agm-map {
   margin-top: 2rem;
   font-size: 0.9rem;
 }
+
+.social-media {
+  img {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+}
+
+.social-media:hover {  
+  opacity: 0.8;  
+}  
