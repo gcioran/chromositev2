@@ -44,6 +44,7 @@ width:100%;
     line-height: 1.5;
     text-align: justify;
     margin: 0;
+
 }
 
 .about-us-cards-text {
@@ -77,3 +78,19 @@ a {
     text-decoration: none;
     color: #333
 }
+
+.social-media {
+    img {
+      width: 150px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .social-media:hover {  
+    opacity: 0.8;  
+  } 
+
+  .projects-text {
+        width: 60%;
+        display: inline-block;
+  }
