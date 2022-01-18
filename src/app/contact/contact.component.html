@@ -14,7 +14,7 @@
       </div>
 
     <div class="col-xl-8 col-lg-8 col-md-8 order-md-1 chromo-grayscale">
-        <agm-map 
+        <!-- <agm-map 
         [latitude]="latitude" 
         [longitude]="longitude" 
         [zoom]="zoom" >
@@ -25,7 +25,29 @@
           [label]="labelOptions"
           [markerDraggable]="false">   
         </agm-marker>
-        </agm-map>
-    </div>
+        </agm-map> -->
+
+        <!-- <div class="container-maps">                                                     <div class="container-maps-one">   
+ 
+          <p class="maps-text-location"><img src="assets/images/location.png"><span class="location-margin">{{listingPlace}}</span></p>
+          <p class="maps-text-location">{{distanceProductToUser ? distanceProductToUser : '-'}} km from you</p>
+          </div><div style="margin-top: 12px;">
+          <div #mapContainer id="map"></div>
+          </div>
+          </div>
+        </div> -->
+        
+        <google-map 
+          height="93vh"
+          width="100%"
+          [options]="mapOptions">
+
+          <map-marker 
+            [position]="marker.position" 
+            [label]="marker.label"
+            [options]="marker.options"
+            [title]="marker.title">
+          </map-marker>
+       </google-map>
   </div>
 </div>

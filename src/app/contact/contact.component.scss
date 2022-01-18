@@ -1,6 +1,8 @@
-agm-map {
+google-map {
+  .map-container {
     height: calc(100vh - 42px);
   }
+}
 
 .chromo-grayscale {
   -webkit-filter: grayscale(100%);
@@ -22,3 +24,8 @@ agm-map {
 .social-media:hover {  
   opacity: 0.8;  
 }  
+
+
+.google-map {
+    height: calc(100vh - 42px);
+}
