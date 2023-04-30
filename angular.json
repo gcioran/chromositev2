@@ -117,5 +117,8 @@
       }
     }
   },
-  "defaultProject": "ChromositeV2"
+  "defaultProject": "ChromositeV2",
+  "cli": {
+    "analytics": false
+  }
 }
