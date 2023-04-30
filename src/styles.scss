@@ -1,5 +1,6 @@
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-@import 'variables';
+@use "sass:meta";
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@include meta.load-css('variables');
 
 // some basic resets 
 

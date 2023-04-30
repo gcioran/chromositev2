@@ -1,27 +1,32 @@
 import { Component, OnInit, ViewChild, ElementRef, NgZone } from '@angular/core';
-import { MapsAPILoader } from '@agm/core';
+import { GoogleMap, MapMarker } from '@angular/google-maps';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+    selector: 'app-contact',
+    templateUrl: './contact.component.html',
+    styleUrls: ['./contact.component.scss'],
+    standalone: false,
+    imports: [GoogleMap, MapMarker]
 })
 export class ContactComponent implements OnInit {
-  title: string = 'My first AGM project';
-  latitude: number = 45.715836;
-  longitude: number = 21.138463;
-  zoom =15;
-  address: string;
-  iconUrl= {
-    url: 'images/marker_black.png',
-    labelOrigin: {x:5, y:-20}
+
+  options: google.maps.MapOptions = {
+    mapId: "ChromoMap",
+    center: { lat: 45.74684016857803, lng: 21.210429609128504 },
+    zoom: 16,
   };
-  labelOptions = {
+
+  markerPosition: google.maps.LatLngLiteral = { lat: 45.74689451831178, lng: 21.210340820656977 };
+  markerLabel: google.maps.MarkerLabel = {
+    text: 'Chromosome Studio',
     color: 'black',
     fontSize: '24px',
-    fontWeight: 'bold',
-    text: "Chromosome Studio"
-}
+    fontWeight: 'bold'
+  };
+  markerIcon: google.maps.Icon = {
+    url: 'images/marker_black.png',
+    labelOrigin: new google.maps.Point(5, -20)
+  };
 
   @ViewChild('search', { static: false })
   public searchElementRef: ElementRef;

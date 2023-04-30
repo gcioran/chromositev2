@@ -38,6 +38,18 @@
     background-image: none;
 }
 
+::ng-deep .carousel-control-prev, ::ng-deep .carousel-control-next {
+    background: none;
+    color: transparent;
+    border: transparent;
+
+    &:hover{
+        color: transparent;
+        background: white;
+        opacity: 0.3;
+    }
+}
+
 ::ng-deep .carousel-control-next-icon::before {
     color: black!important;
     width: 100px!important;
@@ -56,6 +68,31 @@
     line-height: 1.2;
     font-size: xx-large;
     font-weight: bold;
+}
+
+::ng-deep .carousel-indicators {
+
+    bottom: 30px;
+
+    button {
+        position: relative;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        width: 30px;
+        height: 3px;
+        margin-right: 3px;
+        margin-left: 3px;
+        text-indent: -999px;
+        background-color: white;
+        border-color: white;
+        opacity: 0.25;
+        border: none;
+    }
+    
+}
+
+::ng-deep .visually-hidden {
+    visibility: hidden;
 }
 
 .class-test {

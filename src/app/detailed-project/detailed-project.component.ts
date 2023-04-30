@@ -7,10 +7,11 @@ import { ChromoLanguageService } from '../chromo-language.service';
 
 
 @Component({
-  selector: 'app-detailed-project',
-  templateUrl: './detailed-project.component.html',
-  styleUrls: ['./detailed-project.component.scss'],
-  providers: [NgbCarouselConfig]  
+    selector: 'app-detailed-project',
+    templateUrl: './detailed-project.component.html',
+    styleUrls: ['./detailed-project.component.scss'],
+    providers: [NgbCarouselConfig],
+    standalone: false
 })
 export class DetailedProjectComponent implements OnInit {
   @ViewChild('carousel', { static: false }) carousel: NgbCarousel;

@@ -15,12 +15,15 @@
       },
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ChromositeV2",
+            "outputPath": {
+              "base": "dist/ChromositeV2"
+            },
             "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": [
+              "src/polyfills.ts"
+            ],
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/images",
@@ -35,12 +38,11 @@
               "node_modules/cookieconsent/build/cookieconsent.min.js"
             ],
             "aot": false,
-            "vendorChunk": true,
             "extractLicenses": false,
-            "buildOptimizer": false,
             "sourceMap": true,
             "optimization": false,
-            "namedChunks": true
+            "namedChunks": true,
+            "browser": "src/main.ts"
           },
           "configurations": {
             "production": {
@@ -55,9 +57,7 @@
               "sourceMap": false,
               "namedChunks": false,
               "aot": true,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true
+              "extractLicenses": true
             }
           },
           "defaultConfiguration": ""
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ChromositeV2:build"
+            "buildTarget": "ChromositeV2:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ChromositeV2:build:production"
+              "buildTarget": "ChromositeV2:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ChromositeV2:build"
+            "buildTarget": "ChromositeV2:build"
           }
         },
         "test": {
@@ -117,5 +117,7 @@
       }
     }
   },
-  "defaultProject": "ChromositeV2"
+  "cli": {
+    "analytics": false
+  }
 }

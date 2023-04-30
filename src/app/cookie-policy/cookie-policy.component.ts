@@ -3,9 +3,10 @@ import { ChromoLanguageService } from '../chromo-language.service';
 
 
 @Component({
-  selector: 'cookie-policy',
-  templateUrl: './cookie-policy.component.html',
-  styleUrls: ['./cookie-policy.component.scss']
+    selector: 'cookie-policy',
+    templateUrl: './cookie-policy.component.html',
+    styleUrls: ['./cookie-policy.component.scss'],
+    standalone: false
 })
 
 export class CookiePolicyComponent implements OnInit {
