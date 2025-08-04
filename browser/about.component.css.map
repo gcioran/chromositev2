@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/about/about.component.scss"],
+  "sourcesContent": [".container {\r\n    height: calc(100vh - 42px);\r\n    filter: grayscale(100%);\r\n}\r\n\r\n.card-deck {\r\n    margin: 0;\r\n}\r\n\r\nimg {\r\n    width: 85%;\r\n}"],
+  "mappings": ";AAAA,CAAA;AACI,UAAA,KAAA,MAAA,EAAA;AACA,UAAA,UAAA;;AAGJ,CAAA;AACI,UAAA;;AAGJ;AACI,SAAA;;",
+  "names": []
+}

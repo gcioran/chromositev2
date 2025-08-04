@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/contact/contact.component.scss"],
+  "sourcesContent": ["agm-map {\r\n  height: calc(100vh - 42px);\r\n}\r\n\r\n.chromo-grayscale {\r\n-webkit-filter: grayscale(100%);\r\nfilter: grayscale(100%);\r\n}\r\n\r\n.chromo-contact {\r\nmargin-top: 2rem;\r\nfont-size: 0.9rem;\r\n}\r\n\r\n.social-media {\r\nimg {\r\n  width: 150px;\r\n  margin-bottom: 10px;\r\n}\r\n}\r\n\r\n.social-media:hover {  \r\nopacity: 0.8;  \r\n}  "],
+  "mappings": ";AAAA;AACE,UAAA,KAAA,MAAA,EAAA;;AAGF,CAAA;AACA,kBAAA,UAAA;AACA,UAAA,UAAA;;AAGA,CAAA;AACA,cAAA;AACA,aAAA;;AAIA,CAAA,aAAA;AACE,SAAA;AACA,iBAAA;;AAIF,CANA,YAMA;AACA,WAAA;;",
+  "names": []
+}
