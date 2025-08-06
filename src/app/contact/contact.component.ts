@@ -1,12 +1,11 @@
 import { Component, OnInit, ViewChild, ElementRef, NgZone } from '@angular/core';
-import { GoogleMap, MapMarker } from '@angular/google-maps';
+// import { GoogleMap, MapMarker } from '@angular/google-maps';
 
 @Component({
     selector: 'app-contact',
     templateUrl: './contact.component.html',
     styleUrls: ['./contact.component.scss'],
     standalone: false,
-    imports: [GoogleMap, MapMarker]
 })
 export class ContactComponent implements OnInit {
 

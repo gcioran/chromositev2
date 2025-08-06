@@ -14,6 +14,36 @@
         }
       },
       "architect": {
+        
+  "deploy": {
+    "builder": "angular-cli-ghpages:deploy",
+    "options": {
+      "buildTarget": "ChromositeV2:build:production",
+                  "index": "src/index.html",
+            "polyfills": [
+              "src/polyfills.ts"
+            ],
+            "tsConfig": "src/tsconfig.app.json",
+            "assets": [
+              "src/images",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss",
+              "node_modules/cookieconsent/build/cookieconsent.min.css",
+              "node_modules/font-awesome/css/font-awesome.min.css"
+            ],
+            "scripts": [
+              "node_modules/cookieconsent/build/cookieconsent.min.js"
+            ],
+            "aot": false,
+            "extractLicenses": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true,
+            "browser": "src/main.ts"
+    }
+  },
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {

@@ -8,6 +8,7 @@ import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { GoogleMap, MapMarker } from '@angular/google-maps';
 
 import 'hammerjs';
 import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
@@ -53,6 +54,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     BrowserModule,
     GoogleMapsModule,
+    GoogleMap, 
+    MapMarker, 
     BrowserAnimationsModule,
     MatToolbarModule,
     FlexLayoutModule,
