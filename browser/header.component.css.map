@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/header/header.component.scss"],
-  "sourcesContent": [".example-fill-remaining-space {\r\n    flex: 100 1 auto;\r\n  }\r\n\r\na {\r\n    margin: 0px 7px 0px 7px;\r\n    span {\r\n        margin: 0px 3px 0px 3px;\r\n    }\r\n\r\n    cursor: pointer;\r\n    text-decoration: none;\r\n}\r\n\r\n.link {\r\n  cursor:pointer;\r\n  color: white!important;    \r\n  text-shadow: 2px 2px 4px #000000;\r\n}\r\n\r\n/* Navbar Styles */\r\n.navbar{border-radius:0;}\r\n.navbar-toggler{border:1px solid rgba(0,0,0,0.2);}\r\n.navbar-toggler:hover{background:rgb(240,240,240)}\r\n.navbar-toggler:focus{outline:0;}\r\n\r\n/* Navbar Collapse Styles To Stack Items At Mobile Widths*/\r\n@media(max-width:47.9em) {\r\n  .navbar .navbar-brand {float:none;display: inline-block;}\r\n  .navbar .navbar-nav>.nav-item { float: none; margin-left: .1rem;}\r\n  .navbar .navbar-nav {float:none !important;}\r\n  .nav-item{width:100%;text-align:left;} \r\n}"],
-  "mappings": ";AAAA,CAAA;AACI,QAAA,IAAA,EAAA;;AAGJ;AACI,UAAA,IAAA,IAAA,IAAA;AAKA,UAAA;AACA,mBAAA;;AALA,EAAA;AACI,UAAA,IAAA,IAAA,IAAA;;AAOR,CAAA;AACE,UAAA;AACA,SAAA;AACA,eAAA,IAAA,IAAA,IAAA;;AAIF,CAAA;AAAQ,iBAAA;;AACR,CAAA;AAAgB,UAAA,IAAA,MAAA,KAAA,CAAA,EAAA,CAAA,EAAA,CAAA,EAAA;;AAChB,CADA,cACA;AAAsB,cAAA,IAAA,GAAA,EAAA,GAAA,EAAA;;AACtB,CAFA,cAEA;AAAsB,WAAA;;AAGtB,OAAA,CAAA,SAAA,EAAA;AACE,GAPF,OAOE,CAAA;AAAuB,WAAA;AAAW,aAAA;;AAClC,GARF,OAQE,CAAA,WAAA,EAAA,CAAA;AAAgC,WAAA;AAAa,iBAAA;;AAC7C,GATF,OASE,CADA;AACqB,WAAA;;AACrB,GAFA;AAEU,WAAA;AAAW,gBAAA;;;",
-  "names": []
-}

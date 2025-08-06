@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/cookie-policy/cookie-policy.component.scss"],
-  "sourcesContent": [".cookie-info-container {\r\n    margin-top: 41px;\r\n    padding: 30px;\r\n    \r\n    p {\r\n        text-align: justify;\r\n    }\r\n}"],
-  "mappings": ";AAAA,CAAA;AACI,cAAA;AACA,WAAA;;AAEA,CAJJ,sBAII;AACI,cAAA;;",
-  "names": []
-}

@@ -1,0 +1,57 @@
+﻿{
+"load" : {
+  "navigation" : {
+    "about" : "DESPRE",
+    "team" : "ECHIPA",
+    "projects" : "PROIECTE",
+    "contact" : "CONTACT",
+    "close" : "INCHIDE"
+  },
+  "cookies": {
+    "message" : "Acest website folosește cookie-uri pentru a se asigura că primiți cea mai bună experiență pe website-ul nostru. Continuarea navigării reprezintă acceptul dvs. pentru această folosință.",
+    "dismiss" : "Ok",
+    "link": "Află mai multe"
+  },
+  "about" : {
+    "architecture" : "ARHITECTURĂ",
+    "interior" : "DESIGN DE INTERIOR",
+    "rendering" : "RANDĂRI",
+    "landscape" : "PEISAGISTICĂ",
+    "urbanism" : "URBANISM",
+    "consultancy" : "CONSULTANȚĂ"
+  },
+  "aboutUs" : {
+    "text" : "CROMOZOM / CHROMOSOME (gr. khrōma \"culoare\" + sōma \"corp\") – Unitate generică, structurală, constantă a nucleului, cu organizare și funcții proprii, care deține informația ereditară specifică. Este format dintr-o singură macromoleculă de ADN dublu. Transcrierea și traducerea se face simultan. Indiferent de scara sau natura proiectelor, pentru CHROMOSOME primează conceptul, ideea care conduce forma, funcțiunea și structura spre un obiect finit. CHROMOSOME răspunde diverselor provocări și are un crez ancorat în secolul XXI. Proiectele sunt abordate având în vedere sustenabilitatea, relația cu contextul urban, claritatea formei și a spațiului. Pasiunea CHROMOSOME merge dincolo de arhitectură, spre grafică, fotografie, muzică, fashion, dans și film. Adesea artele conexe generează conceptele. Echipa extinsă CHROMOSOME este formată din colaboratori profesioniști, incluzând ingineri din toate domeniile construcțiilor. Colaborarea cu specialiștii pe tot parcursul creației concretizează soluțiile într-un final palpabil.",
+    "hashtag" : "#ADN #CONCEPT #GENERARE #CONTEMPORAN #SIMPLITATE #SUSTENABILITATE #DIVERSITATE #ABORDARE #DESIGN #SCARA #RELATIE #SIMTURI",
+    "projects" : "PROIECTELE NOASTRE"
+  },
+  "projects" : {
+    "title" : "PROIECTE"
+  },
+  "rendering" : {
+    "title" : "RANDĂRI"
+  },
+  "team" : {
+    "title" : "ECHIPA",
+    "job" : {
+      "architect": "arhitect",
+      "stagiar": "arhitect stagiar"
+    }
+  },
+  "contact" : {
+    "title" : "CONTACT",
+    "address" : "Bulevardul General Ion Dragalina nr 24, județul Timiș, România",
+    "phone" : "+40744691187",
+    "mail" : "chromosome.architecture@gmail.com",
+    "arh" : "arh."
+  },
+  "footer" : {
+    "backToTop" : "Înapoi la start"
+  },
+  "modalMeniu" : {
+    "images" : "IMAGINI",
+    "drawings" : "SCHIȚE",
+    "description" :"DESCRIERE"
+  }
+}
+}
