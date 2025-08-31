@@ -23,6 +23,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { DetailedProjectComponent } from './detailed-project/detailed-project.component';
 import { CookiePolicyComponent } from './cookie-policy/cookie-policy.component';
 import { AboutComponent } from './about/about.component';
+import { SwipeDirective } from './detailed-project/swipe.directive';
 
 declare var Hammer: any;
 
@@ -51,6 +52,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     DetailedProjectComponent,
     CookiePolicyComponent
   ],
+   exports: [
+    SwipeDirective
+  ],
   imports: [
     BrowserModule,
     GoogleMapsModule,
@@ -61,6 +65,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FlexLayoutModule,
     AppRoutingModule,
     HttpClientModule,
+    SwipeDirective,
     NgbModule,
     TranslateModule.forRoot({
         loader: {

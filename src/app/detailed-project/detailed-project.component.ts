@@ -4,6 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { NgbCarouselConfig, NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
 import { ChromoLanguageService } from '../chromo-language.service';
+import { AppModule } from '../app.module';
 
 
 @Component({
@@ -11,6 +12,7 @@ import { ChromoLanguageService } from '../chromo-language.service';
     templateUrl: './detailed-project.component.html',
     styleUrls: ['./detailed-project.component.scss'],
     providers: [NgbCarouselConfig],
+    imports: [AppModule],
     standalone: false
 })
 export class DetailedProjectComponent implements OnInit {
@@ -55,14 +57,6 @@ export class DetailedProjectComponent implements OnInit {
      var index = this.selectedProject.src.length -1;
      return !!this.selectedProject.src[index].text;
    };
-
-   public swipe(e) {
-    if (e === 'swiperight') {
-      this.carousel.prev();
-    } else {
-      this.carousel.next();
-    } 
-  }
 
   private getProjectIndex(projectName) {
     const project = this.projectCollection.items.filter(function(element: any) {

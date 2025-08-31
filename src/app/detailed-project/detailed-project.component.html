@@ -1,4 +1,4 @@
-<div class="swipe"(swipeleft)="swipe($event.type)" (swiperight)="swipe($event.type)">
+<div>
   <div class="container-fluid">
     <div class="row navbar-mock"></div>
     <div class="row">
@@ -7,7 +7,7 @@
           <picture *ngIf="image.pic">
               <source [srcset]="image.pic +'.webp'" type="image/webp">
               <source [srcset]="image.pic +'.jpg'" type="image/jpeg">
-              <img [src]="image.pic+ '.jpg'" class="mx-auto d-block" alt='project pic'>
+              <img [src]="image.pic+ '.jpg'" class="mx-auto d-block" alt='project pic' swipe (leftSwipe)="carousel.next()" (rightSwipe)="carousel.prev()">
           </picture>
             <div class="carousel-caption" *ngIf="image.text && showRomanian">{{image.text.RO}}</div>
             <div class="carousel-caption" *ngIf="image.text && !showRomanian">{{image.text.EN}}</div>
