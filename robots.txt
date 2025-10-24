@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Allow crawling of main content
+Allow: /home
+Allow: /projects
+Allow: /contact
+Allow: /about
+
+# Disallow admin or private areas (if any exist in the future)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow crawling of assets
+Allow: /images/
+Allow: /assets/
+
+# Sitemap location
+Sitemap: https://chromostudio.ro/sitemap.xml
+
+# Crawl-delay (optional - can help with server load)
+Crawl-delay: 1

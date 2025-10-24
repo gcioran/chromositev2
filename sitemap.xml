@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Main Pages -->
+  <url>
+    <loc>https://chromostudio.ro/</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/home</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/contact</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/about</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Individual Project Pages -->
+  <url>
+    <loc>https://chromostudio.ro/projects/o%20house</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/mda%20house</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/p%20house</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/rc%20residence</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/dpx%20no.%207</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/dpx%20no.%2015</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/v%20extension</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/mp%20studio</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/aldradent</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/h.la%20house</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/ava%20office</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/bath%20design</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/ch%20office</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/sdlt</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/s%20house</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/coffeehouse</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/ca%20house</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/le%20monolithe</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/rb%20house</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/db%20shop%20facade</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://chromostudio.ro/projects/brunch%20access</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://chromostudio.ro/cookie-policy</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+</urlset>
