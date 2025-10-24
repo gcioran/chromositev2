@@ -1,7 +1,8 @@
 import { Directive, EventEmitter, HostListener, Output } from '@angular/core';
 
 @Directive({
-  selector: '[swipe]'
+  selector: '[swipe]',
+  standalone: false
 })
 export class SwipeDirective {
   @Output() leftSwipe = new EventEmitter<number>();
