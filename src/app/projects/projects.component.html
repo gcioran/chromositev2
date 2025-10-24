@@ -1,7 +1,11 @@
 <div class="container-fluid main-page">
-    <div class="row navbar-mock"></div> 
-  <div >
-    <ul class="cover-photos">
+    <div class="row navbar-mock"></div>
+    <header>
+        <h1 class="visually-hidden">{{ 'load.projects.title' | translate }}</h1>
+    </header>
+    <section class="projects-gallery">
+        <h2 class="visually-hidden">Architecture Project Gallery</h2>
+        <ul class="cover-photos">
       <li class="relative-position" 
         *ngFor='let image of project.items'
         (click)="onSelect(image)"        
@@ -10,10 +14,10 @@
         <picture>
             <source [srcset]="image.path +'.webp'" type="image/webp">
             <source [srcset]="image.path +'.jpg'" type="image/jpeg">
-            <img [src]="image.path +'.jpg'"  alt="project proiect">
+            <img [src]="image.path +'.jpg'"  [alt]="image.text + ' - Contemporary architecture project by Chromosome Studio'">
         </picture>
         <span *ngIf="image.showText" class="text-content">{{image.text}}</span>
       </li>
    </ul>
-  </div>
+    </section>
 </div>

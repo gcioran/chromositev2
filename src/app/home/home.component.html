@@ -1,65 +1,76 @@
 <div class="container-fluid">
     <div class="row navbar-mock"></div>
+    
+    <!-- Hero Section -->
     <div class="home-background-pic">
         <picture>
                 <source srcset="images/cover.webp" type="image/webp">
                 <source srcset="images/cover.jpg" type="image/jpeg">
-                <img class="" src="images/cover.jpg" alt="architecture">
+                <img class="" src="images/cover.jpg" alt="Contemporary architecture design by Chromosome Studio">
         </picture>
+        <div class="hero-content">
+            <h1 class="visually-hidden">Chromosome Studio Architecture - Contemporary Design in Timișoara</h1>
+        </div>
     </div>
 
-    <a routerLink="/projects"><div class="container-fluid about-us-cards">
-        <div class="row">
-            <div class="col-6 col-sm-4 col-lg-2">
-                <i class="fa">&#xf170;</i>
-                <p>{{ 'load.about.architecture' | translate }} </p>
+    <!-- Services Section -->
+    <section class="services-section">
+        <h2 class="visually-hidden">Our Architecture Services</h2>
+        <a routerLink="/projects"><div class="container-fluid about-us-cards">
+            <div class="row">
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <i class="fa">&#xf170;</i>
+                    <h3>{{ 'load.about.architecture' | translate }}</h3>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <i class="material-icons">&#xe16b;</i>
+                    <h3>{{ 'load.about.interior' | translate }}</h3>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <i class="fa">&#xf06e;</i>
+                    <h3>{{ 'load.about.rendering' | translate }}</h3>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <i class="material-icons">&#xe407;</i>
+                    <h3>{{ 'load.about.landscape' | translate }}</h3>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <i class="material-icons">&#xe7f1;</i>
+                    <h3>{{ 'load.about.urbanism' | translate }}</h3>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <i class="fa fa-cog"></i>
+                    <h3>{{ 'load.about.consultancy' | translate }}</h3>
+                </div>
             </div>
-            <div class="col-6 col-sm-4 col-lg-2">
-                <i class="material-icons">&#xe16b;</i>
-                <p>{{ 'load.about.interior' | translate }}</p>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2">
-                <i class="fa">&#xf06e;</i>
-                <p>{{ 'load.about.rendering' | translate }}</p>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2">
-                <i class="material-icons">&#xe407;</i>
-                <p>{{ 'load.about.landscape' | translate }}</p>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2">
-                <i class="material-icons">&#xe7f1;</i>
-                <p>{{ 'load.about.urbanism' | translate }}</p>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2">
-                <i class="fa fa-cog"></i>
-                <p>{{ 'load.about.consultancy' | translate }}</p>
+        </div></a>
+    </section>
+          
+    <!-- About Us Section -->
+    <section class="about-section">
+        <div class="container-fluid about-us-container">
+            <div class="about-us-cards-text">
+                <picture>
+                    <source srcset="images/pag1.webp" type="image/webp">
+                    <source srcset="images/pag1.jpg" type="image/jpeg">
+                    <img class="float-righ we-know-image" src="images/pag1.jpg" alt="Architecture team at work - Chromosome Studio">
+                </picture>
+                
+                <h2>About Chromosome Studio</h2>
+                <p class="aboutUsText">
+                    {{ 'load.aboutUs.text' | translate }}
+                    <br><br> {{ 'load.aboutUs.hashtag' | translate }}
+                </p>
+
+                <p class="aboutUsText projects-text">
+                    <a routerLink="/projects" class="black-project-button"><i class="fa fa-th" ></i> {{ 'load.aboutUs.projects' | translate }}</a>
+                </p>
+                <a class="social-media" href="https://www.instagram.com/chromosome.architecture/">
+                    <img class="" src="images/followus.png" alt="Follow Chromosome Studio on Instagram">
+                </a>
             </div>
         </div>
-    </div></a>
-          
-    <!-- Promo Section - "We know design" -->
-    <div class="container-fluid about-us-container">
-    <div class="about-us-cards-text" >
-        <picture>
-                <source srcset="images/pag1.webp" type="image/webp">
-                <source srcset="images/pag1.jpg" type="image/jpeg">
-                <img class="float-righ we-know-image" src="images/pag1.jpg" alt="architecture">
-        </picture>
-        <h1>
-            <p class="aboutUsText">
-                {{ 'load.aboutUs.text' | translate }}
-                <br><br> {{ 'load.aboutUs.hashtag' | translate }}
-            </p>
-        </h1>
-
-        <p class="aboutUsText projects-text">
-            <a routerLink="/projects" class="black-project-button"><i class="fa fa-th" ></i> {{ 'load.aboutUs.projects' | translate }}</a>
-        </p>
-        <a class="social-media" href="https://www.instagram.com/chromosome.architecture/">
-            <img class="" src="images/followus.png" alt="follow us on instagram">
-         </a>
-    </div>
-    </div>
+    </section>
     
     <div>
         <picture>

@@ -1,27 +1,41 @@
 <div class="container-fluid">
   <div class="row navbar-mock"></div>
+  
+  <!-- Contact Header -->
+  <header>
+    <h1 class="visually-hidden">{{ 'load.contact.title' | translate }}</h1>
+  </header>
+  
   <div class="row align-items-center">
       <div class="col-xl-4 col-lg-4 col-md-4 order-md-2 chromo-contact">
-          <p><i class="fa-fw"></i> <strong>{{ 'load.contact.arh' | translate }} Dana Cioran</strong></p>
-          <p><i class="fa fa-phone fa-fw"></i> {{ 'load.contact.phone' | translate }}</p>
-          <p><i class="fa fa-envelope"> </i> {{ 'load.contact.mail' | translate }}</p>
-          <p><i class="fa fa-map-marker"></i>   {{ 'load.contact.address' | translate }}</p>
+          <section class="contact-info">
+              <h2 class="visually-hidden">Contact Information</h2>
+              <div class="contact-details">
+                  <h3>{{ 'load.contact.arh' | translate }} Dana Cioran</h3>
+                  <p><i class="fa fa-phone fa-fw"></i> {{ 'load.contact.phone' | translate }}</p>
+                  <p><i class="fa fa-envelope"> </i> {{ 'load.contact.mail' | translate }}</p>
+                  <p><i class="fa fa-map-marker"></i> {{ 'load.contact.address' | translate }}</p>
+              </div>
 
-          <a class="social-media" href="https://www.instagram.com/chromosome.architecture/">
-            <img class="" src="images/followus.png" alt="follow us on instagram">
-         </a>
+              <h3>Follow Us</h3>
+              <a class="social-media" href="https://www.instagram.com/chromosome.architecture/">
+                <img class="" src="images/followus.png" alt="Follow Chromosome Studio Architecture on Instagram">
+              </a>
+          </section>
       </div>
 
     <div class="col-xl-8 col-lg-8 col-md-8 order-md-1 chromo-grayscale">
-        <google-map [options]="options"
-          height="93vh"
-          width="100%">
-          <map-marker
-            [position]="markerPosition"
-            [label]="markerLabel"
-            [icon]="markerIcon">
-          </map-marker>
-        </google-map>
-
-  </div>
+        <section class="location-map">
+            <h2 class="visually-hidden">Our Location in Timișoara</h2>
+            <google-map [options]="options"
+              height="93vh"
+              width="100%">
+              <map-marker
+                [position]="markerPosition"
+                [label]="markerLabel"
+                [icon]="markerIcon">
+              </map-marker>
+            </google-map>
+        </section>
+    </div>
 </div>

@@ -1,24 +1,30 @@
 <div class="row navbar-mock"></div>
+
+<!-- About Header -->
+<header>
+    <h1 class="visually-hidden">About Chromosome Studio</h1>
+</header>
+
 <div class="container">
     <div class="row h-100 justify-content-center align-items-center">
-        <div class="card-deck">
-            <div class="card chromo-card">
-              <picture>
-                <source srcset="images/Dana.webp" type="image/webp">
-                <source srcset="images/Dana.jpg" type="image/jpeg">
-                <img class="" src="images/Dana.jpg" alt="Dana Cioran">
-              </picture>
-              <div class="card-body row justify-content-center">
-                <h5 class="card-title">{{ 'load.team.job.architect' | translate }} Dana Cioran</h5>
-                <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-              </div>
-              <!-- <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div> -->
+        <section class="team-section">
+            <h2 class="visually-hidden">{{ 'load.team.title' | translate }}</h2>
+            <div class="card-deck">
+                <div class="card chromo-card">
+                    <picture>
+                        <source srcset="images/Dana.webp" type="image/webp">
+                        <source srcset="images/Dana.jpg" type="image/jpeg">
+                        <img class="" src="images/Dana.jpg" alt="Dana Cioran - Lead Architect at Chromosome Studio">
+                    </picture>
+                    <div class="card-body row justify-content-center">
+                        <h3 class="card-title">{{ 'load.team.job.architect' | translate }} Dana Cioran</h3>
+                        <!-- <p class="card-text">Founder and lead architect of Chromosome Studio, specializing in contemporary residential and commercial architecture design.</p> -->
+                    </div>
+                </div>
+                <div class="card chromo-card">
+                    <!-- Future team member placeholder -->
+                </div>
             </div>
-            <div class="card chromo-card">
-            </div>
-          </div>
+        </section>
     </div>
-    
 </div>
