@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SeoService } from '../seo.service';
 
 @Component({
     selector: 'app-home',
@@ -8,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private seoService: SeoService) { }
 
   ngOnInit() {
+    // Update SEO meta tags for home page
+    this.seoService.updateSEO(this.seoService.getHomeSEO());
+    
+    // Add business structured data
+    this.seoService.addStructuredData(this.seoService.getBusinessStructuredData());
   }
 
 }

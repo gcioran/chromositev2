@@ -4,6 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { NgbCarouselConfig, NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
 import { ChromoLanguageService } from '../chromo-language.service';
+import { SeoService } from '../seo.service';
 import { AppModule } from '../app.module';
 
 
@@ -12,7 +13,6 @@ import { AppModule } from '../app.module';
     templateUrl: './detailed-project.component.html',
     styleUrls: ['./detailed-project.component.scss'],
     providers: [NgbCarouselConfig],
-    imports: [AppModule],
     standalone: false
 })
 export class DetailedProjectComponent implements OnInit {
@@ -25,7 +25,8 @@ export class DetailedProjectComponent implements OnInit {
     private route: ActivatedRoute,
     private language: ChromoLanguageService,
     public config: NgbCarouselConfig,
-    private location: Location) {
+    private location: Location,
+    private seoService: SeoService) {
       config.interval = 0;
       this.projectCollection = projectCollection;
     }
@@ -33,6 +34,15 @@ export class DetailedProjectComponent implements OnInit {
   ngOnInit(): void {
     this.selectedProject = this.getProject();
     this.language.currentSelectedLanguage.subscribe(language => this.showRomanian = language !== 'en');
+    
+    // Update SEO for specific project
+    if (this.selectedProject) {
+      const projectName = this.route.snapshot.paramMap.get('projectName') || '';
+      this.seoService.updateSEO(this.seoService.getProjectSEO(projectName, this.selectedProject));
+      
+      // Add project structured data
+      this.seoService.addStructuredData(this.seoService.getProjectStructuredData(this.selectedProject));
+    }
   }
 
   public getProject() {

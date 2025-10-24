@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProjectsService } from '../projects.service';
+import { SeoService } from '../seo.service';
 
 @Component({
     selector: 'app-projects',
@@ -11,13 +12,19 @@ import { ProjectsService } from '../projects.service';
 export class ProjectsComponent implements OnInit {
   images = [];
 
-  constructor(public project: ProjectsService, public router: Router) {
+  constructor(
+    public project: ProjectsService, 
+    public router: Router,
+    private seoService: SeoService
+  ) {
     this.project.items.forEach((item)  => {
       this.images.push(item.path);
-  });
-   }
+    });
+  }
 
   ngOnInit() {
+    // Update SEO meta tags for projects page
+    this.seoService.updateSEO(this.seoService.getProjectsSEO());
   }
 
   onSelect(image) {

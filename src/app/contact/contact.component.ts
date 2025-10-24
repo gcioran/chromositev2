@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef, NgZone } from '@angular/core';
+import { SeoService } from '../seo.service';
 // import { GoogleMap, MapMarker } from '@angular/google-maps';
 
 @Component({
@@ -30,9 +31,14 @@ export class ContactComponent implements OnInit {
   @ViewChild('search', { static: false })
   public searchElementRef: ElementRef;
   
-  constructor() {
+  constructor(private seoService: SeoService) {
    }
 
   ngOnInit() {
+    // Update SEO meta tags for contact page
+    this.seoService.updateSEO(this.seoService.getContactSEO());
+    
+    // Add business structured data with contact focus
+    this.seoService.addStructuredData(this.seoService.getBusinessStructuredData());
   }
 }
