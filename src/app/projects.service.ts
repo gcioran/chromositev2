@@ -26,6 +26,40 @@ export class ProjectsService {
     // }
     ]
   },
+  {path:'images/projects/CC House/1',
+  text:'CC House',
+  sideDescription: {
+    title: 'CC House',
+    body : {RO: 'Locație: Timișoara, România\nCategorie: Rezidențial\nSuprafață teren: 252 mp\nSuprafață construită: 180 mp',
+            EN: 'Location: Timișoara, Romania\nCategory: Residential\nLand area: 252 sq m\nBuild-up area: 180 sq m '}
+  },
+    src:[
+    {pic:'images/projects/CC House/1'},
+    {pic:'images/projects/CC House/2'},
+    {pic:'images/projects/CC House/3'},
+    {pic:'images/projects/CC House/4'},
+    // {text : {RO: '',
+    //         EN: ''}
+    // }
+    ]
+  },
+    {path:'images/projects/RGB House/1',
+  text:'RGB House',
+  sideDescription: {
+    title: 'RGB House',
+    body : {RO: 'Locație: Timișoara, România\nCategorie: Rezidențial\nSuprafață teren: 252 mp\nSuprafață construită: 100 mp',
+            EN: 'Location: Timișoara, Romania\nCategory: Residential\nLand area: 252 sq m\nBuild-up area: 100 sq m '}
+  },
+    src:[
+    {pic:'images/projects/RGB House/1'},
+    {pic:'images/projects/RGB House/2'},
+    {pic:'images/projects/RGB House/3'},
+    {pic:'images/projects/RGB House/4'},
+    // {text : {RO: '',
+    //         EN: ''}
+    // }
+    ]
+  },
   {path:'images/projects/MDA House/1',
   text:'MDA House',
   sideDescription: {
