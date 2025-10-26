@@ -14,7 +14,19 @@ Suprafa\u021B\u0103 teren: 500 mp
 Suprafa\u021B\u0103 construit\u0103: 150 mp`,EN:`Location: S\xE2nandrei, Romania
 Category: Residential
 Land area: 500 sq m
-Build-up area: 150 sq m `}},src:[{pic:"images/projects/O House/1"},{pic:"images/projects/O House/2"},{pic:"images/projects/O House/3"},{pic:"images/projects/O House/4"},{pic:"images/projects/O House/5"},{pic:"images/projects/O House/6"},{pic:"images/projects/O House/7"}]},{path:"images/projects/MDA House/1",text:"MDA House",sideDescription:{title:"MDA House",body:{RO:`Loca\u021Bie: Oravi\u021Ba, Rom\xE2nia
+Build-up area: 150 sq m `}},src:[{pic:"images/projects/O House/1"},{pic:"images/projects/O House/2"},{pic:"images/projects/O House/3"},{pic:"images/projects/O House/4"},{pic:"images/projects/O House/5"},{pic:"images/projects/O House/6"},{pic:"images/projects/O House/7"}]},{path:"images/projects/CC House/1",text:"CC House",sideDescription:{title:"CC House",body:{RO:`Loca\u021Bie: Timi\u0219oara, Rom\xE2nia
+Categorie: Reziden\u021Bial
+Suprafa\u021B\u0103 teren: 252 mp
+Suprafa\u021B\u0103 construit\u0103: 180 mp`,EN:`Location: Timi\u0219oara, Romania
+Category: Residential
+Land area: 252 sq m
+Build-up area: 180 sq m `}},src:[{pic:"images/projects/CC House/1"},{pic:"images/projects/CC House/2"},{pic:"images/projects/CC House/3"},{pic:"images/projects/CC House/4"}]},{path:"images/projects/RGB House/1",text:"RGB House",sideDescription:{title:"RGB House",body:{RO:`Loca\u021Bie: Timi\u0219oara, Rom\xE2nia
+Categorie: Reziden\u021Bial
+Suprafa\u021B\u0103 teren: 252 mp
+Suprafa\u021B\u0103 construit\u0103: 100 mp`,EN:`Location: Timi\u0219oara, Romania
+Category: Residential
+Land area: 252 sq m
+Build-up area: 100 sq m `}},src:[{pic:"images/projects/RGB House/1"},{pic:"images/projects/RGB House/2"},{pic:"images/projects/RGB House/3"},{pic:"images/projects/RGB House/4"}]},{path:"images/projects/MDA House/1",text:"MDA House",sideDescription:{title:"MDA House",body:{RO:`Loca\u021Bie: Oravi\u021Ba, Rom\xE2nia
 Categorie: Reziden\u021Bial
 Suprafa\u021B\u0103 teren: 1.235 mp
 Suprafa\u021B\u0103 construit\u0103: 160 mp`,EN:`Location: Oravita, Romania
